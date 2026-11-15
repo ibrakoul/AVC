@@ -97,23 +97,24 @@
       "euGeneral": "Europäische Notrufnummer",
       "deafSms": "Für gehörlose oder schwerhörige Menschen (SMS/Text)",
       "ambulanceRegional": "Rettungsdienst (einige Regionen)",
-      "mobileAlternative": "Alternative vom Mobiltelefon"
+      "mobileAlternative": "Alternative vom Mobiltelefon",
+      "onCallDoctor": "ärztlicher Bereitschaftsdienst für nicht lebensbedrohliche Erkrankungen"
     },
     "alsoValid": "Ebenfalls gültig",
     "stepsTitle": "Was jetzt zu tun ist",
     "steps": [
-      "Rufen Sie sofort den Notruf. Sagen Sie: „Ich vermute einen Schlaganfall.“",
-      "Notieren Sie, wann die Symptome begonnen haben oder wann die Person zuletzt gesund gesehen wurde.",
-      "Bleiben Sie bei der Person. Beruhigen Sie sie und lagern Sie sie bequem.",
-      "Wenn die Person benommen ist, erbricht oder bewusstlos ist, aber atmet: in die stabile Seitenlage bringen.",
-      "Schließen Sie die Tür auf und machen Sie Licht, damit der Rettungsdienst Sie findet.",
-      "Legen Sie wenn möglich Medikamentenliste und medizinische Unterlagen bereit."
+      "Rufen Sie sofort den Notruf und sagen Sie: „Verdacht auf Schlaganfall“.",
+      "Beschreiben Sie kurz die Symptome und sagen Sie, seit wann sie bestehen oder wann die Person zuletzt ohne Beschwerden war.",
+      "Lassen Sie die Person nicht allein. Beruhigen Sie sie, sagen Sie ihr, dass Hilfe kommt, und lockern Sie beengende Kleidung.",
+      "Beobachten Sie Atmung und Bewusstsein. Ist die Person bewusstlos, atmet aber, bringen Sie sie in die stabile Seitenlage. Den Oberkörper einer bewusstlosen Person nicht erhöht lagern.",
+      "Wenn die Person nicht mehr atmet, beginnen Sie mit der Wiederbelebung. Die Leitstelle leitet Sie an.",
+      "Schließen Sie die Tür auf, machen Sie Licht und legen Sie wenn möglich die Medikamentenliste bereit."
     ],
     "dontTitle": "NICHT",
     "dont": [
-      "Nicht abwarten, ob die Symptome verschwinden.",
+      "Nicht abwarten, ob die Symptome verschwinden — auch nicht, wenn sie sich bessern.",
       "Kein Aspirin, keine Blutverdünner und keine anderen Medikamente geben.",
-      "Nichts zu essen oder zu trinken geben.",
+      "Nichts zu trinken oder zu essen geben (mögliche Schluckstörung).",
       "Die Person nicht selbst ins Krankenhaus fahren lassen."
     ],
     "timesTitle": "Wichtige Zeiten",
@@ -130,11 +131,11 @@
     "minutesAgo": "vor {{count}} Min.",
     "tellTitle": "Das sagen Sie dem Rettungsdienst",
     "tell": [
-      "Was Sie beobachtet haben (Gesicht, Arm, Sprache, Gleichgewicht, Sehen).",
-      "Wann die Symptome begonnen haben bzw. wann die Person zuletzt gesund war.",
-      "Aktuelle Medikamente, besonders Blutverdünner.",
-      "Bekannte Erkrankungen: früherer Schlaganfall, Diabetes, Herzrhythmusstörungen.",
-      "Ihre genaue Adresse und wie man hineinkommt."
+      "Wo: genaue Adresse, Etage und Zugang.",
+      "Was: „Verdacht auf Schlaganfall“.",
+      "Welche Symptome: Sprache, Gesicht, Arm/Bein, Sehen, Schwindel, starke Kopfschmerzen.",
+      "Seit wann: Beginn der Symptome bzw. wann die Person zuletzt ohne Beschwerden war.",
+      "Wer ruft an: Ihr Name und eine Rückrufnummer. Aktuelle Medikamente (besonders Blutverdünner), falls bekannt."
     ],
     "contactsTitle": "Notfallkontakte",
     "noContacts": "Noch keine Notfallkontakte.",
@@ -148,7 +149,10 @@
     "availableOffline": "Offline verfügbar",
     "triggerTitle": "Sie haben ein mögliches Schlaganfall-Zeichen gemeldet",
     "triggerBody": "Das ist ein medizinischer Notfall. Rufen Sie jetzt an — warten Sie nicht, bis die Symptome verschwinden.",
-    "triggerDisappeared": "Auch verschwundene Symptome müssen dringend ärztlich abgeklärt werden. Sie können ein Warnzeichen (TIA) für einen Schlaganfall sein."
+    "triggerDisappeared": "Auch verschwundene Symptome müssen dringend ärztlich abgeklärt werden. Sie können ein Warnzeichen (TIA) für einen Schlaganfall sein.",
+    "dispatcherGuides": "Sie müssen nicht alles auswendig wissen — die Leitstelle führt Sie durch das Gespräch.",
+    "notForStrokeTitle": "Falsche Nummer bei Schlaganfall",
+    "notForStroke": "Die {{number}} ({{label}}) ist NICHT für einen Schlaganfall-Verdacht. Wählen Sie die {{primary}}."
   },
   "stroke": {
     "title": "Schlaganfall erkennen",
@@ -170,7 +174,7 @@
       "E": {
         "word": "Augen",
         "title": "Plötzliche Sehstörungen",
-        "description": "Plötzlicher Sehverlust auf einem oder beiden Augen oder Doppelbilder.",
+        "description": "Plötzlicher Sehverlust auf einem oder beiden Augen, Gesichtsfeldausfall oder Doppelbilder.",
         "check": "Sieht die Person plötzlich schlechter, doppelt oder fehlt ein Teil des Gesichtsfelds?"
       },
       "F": {
@@ -182,8 +186,8 @@
       "A": {
         "word": "Arme",
         "title": "Armschwäche",
-        "description": "Plötzliche Schwäche, Taubheit oder Unfähigkeit, einen Arm zu heben.",
-        "check": "Bitten Sie, beide Arme zu heben. Sinkt ein Arm ab oder bewegt er sich nicht?"
+        "description": "Plötzliche Schwäche, Taubheit oder Lähmung eines oder beider Arme.",
+        "check": "Bitten Sie, beide Arme nach vorne zu heben, Handflächen nach oben. Sinkt ein Arm ab oder bewegt er sich nicht?"
       },
       "S": {
         "word": "Sprache",
@@ -206,9 +210,9 @@
     "noSignsNote": "Fehlen diese Zeichen, ist ein Schlaganfall NICHT ausgeschlossen. Weitere plötzliche Zeichen sind z. B. starke Kopfschmerzen, Verwirrtheit oder Taubheit. Wenn Sie besorgt sind, rufen Sie an.",
     "otherSignsTitle": "Weitere mögliche plötzliche Zeichen",
     "otherSigns": [
-      "Plötzliche, sehr starke Kopfschmerzen ohne bekannte Ursache",
+      "Plötzliche, sehr starke Kopfschmerzen ohne bekannte Ursache, manchmal mit Übelkeit oder Erbrechen",
       "Plötzliche Verwirrtheit oder Verständnisprobleme",
-      "Plötzliche Taubheit von Gesicht, Arm oder Bein, besonders auf einer Seite"
+      "Plötzliche Taubheit oder Lähmung von Gesicht, Arm oder Bein, meist auf einer Körperseite"
     ],
     "learnTypes": "Mehr über Schlaganfall-Arten und TIA"
   },
@@ -216,18 +220,18 @@
     "title": "Über den Schlaganfall",
     "intro": "Ein Schlaganfall entsteht, wenn die Durchblutung eines Gehirnbereichs blockiert ist oder ein Blutgefäß im Gehirn platzt. Gehirnzellen sterben innerhalb von Minuten ab — schnelle Behandlung rettet Gehirngewebe.",
     "ischemicTitle": "Ischämischer Schlaganfall",
-    "ischemicBody": "Die häufigste Form. Ein Blutgerinnsel oder eine Verengung verschließt eine Hirnarterie. Manche Behandlungen sind nur innerhalb weniger Stunden möglich — deshalb ist sofortiges Anrufen entscheidend.",
+    "ischemicBody": "Die häufigste Form. Ein Blutgerinnsel verschließt eine Hirnarterie. Klinikbehandlungen wie Thrombolyse oder Thrombektomie müssen innerhalb der ersten Stunden nach Symptombeginn erfolgen — deshalb ist sofortiges Anrufen entscheidend.",
     "hemorrhagicTitle": "Hämorrhagischer Schlaganfall (Hirnblutung)",
     "hemorrhagicBody": "Ein Blutgefäß im oder am Gehirn platzt und blutet. Bluthochdruck ist ein wichtiger Risikofaktor. Auch dies ist ein medizinischer Notfall.",
     "tiaTitle": "Transitorische ischämische Attacke (TIA)",
-    "tiaBody": "Schlaganfall-ähnliche Symptome, die wieder verschwinden, oft innerhalb von Minuten. Eine TIA ist ein Warnzeichen: Das Schlaganfallrisiko in den folgenden Tagen kann hoch sein. Sie muss dringend abgeklärt werden, auch wenn Sie sich wieder gut fühlen.",
+    "tiaBody": "Schlaganfall-ähnliche Symptome, die von selbst wieder verschwinden, meist nach Minuten, manchmal erst nach einigen Stunden. Eine TIA ist ein Warnzeichen: Das Risiko für einen folgenden Schlaganfall ist hoch. Sie ist ein Notfall — rufen Sie an, auch wenn Sie sich wieder gut fühlen.",
     "disappearedTitle": "Symptome weg? Trotzdem anrufen.",
     "disappearedBody": "Nur ein medizinisches Team kann eine TIA von einem Schlaganfall unterscheiden. Verschwundene Symptome bedeuten nicht, dass die Gefahr vorbei ist.",
     "whyTimeTitle": "Warum Zeit entscheidend ist",
     "whyTimeBody": "Kliniken können Behandlungen anbieten, die Hirnschäden begrenzen, aber viele müssen schnell beginnen. Der Zeitpunkt des Symptombeginns hilft bei der Wahl der Behandlung.",
     "afterTitle": "Leben nach dem Schlaganfall",
     "afterBody": "Zur Genesung gehören oft Rehabilitation (Physiotherapie, Logopädie, Ergotherapie) und die Behandlung von Risikofaktoren, um einem weiteren Schlaganfall vorzubeugen. Selbsthilfegruppen unterstützen Betroffene und Angehörige.",
-    "reviewNotice": "Informationsinhalt — vor Veröffentlichung noch durch medizinisches Fachpersonal zu prüfen."
+    "reviewNotice": "Informationsinhalt abgeglichen mit WHO, gesund.bund.de (Bundesministerium für Gesundheit) und der Stiftung Deutsche Schlaganfall-Hilfe. Ersetzt keine ärztliche Beratung."
   },
   "prevention": {
     "title": "Vorbeugung",
@@ -253,16 +257,46 @@
       "privacy": "Ihre Antworten bleiben auf diesem Gerät, außer Sie aktivieren die Cloud-Synchronisierung in den Datenschutzeinstellungen."
     },
     "factors": {
-      "hypertension": { "question": "Wurde bei Ihnen Bluthochdruck festgestellt?", "label": "Bluthochdruck" },
-      "diabetes": { "question": "Wurde bei Ihnen Diabetes festgestellt?", "label": "Diabetes" },
-      "cholesterol": { "question": "Wurde bei Ihnen ein erhöhter Cholesterinwert festgestellt?", "label": "Erhöhtes Cholesterin" },
-      "smoking": { "question": "Rauchen Sie derzeit oder konsumieren Sie Tabak?", "label": "Rauchen" },
-      "alcohol": { "question": "Trinken Sie regelmäßig mehr Alkohol, als in Ihrem Land empfohlen wird?", "label": "Alkoholkonsum" },
-      "inactivity": { "question": "Sind Sie weniger als 150 Minuten pro Woche körperlich aktiv?", "label": "Bewegungsmangel" },
-      "overweight": { "question": "Wurde bei Ihnen Übergewicht festgestellt?", "label": "Übergewicht" },
-      "atrialFibrillation": { "question": "Wurde bei Ihnen Vorhofflimmern (unregelmäßiger Herzschlag) festgestellt?", "label": "Vorhofflimmern" },
-      "previousStroke": { "question": "Hatten Sie bereits einen Schlaganfall oder eine TIA?", "label": "Früherer Schlaganfall oder TIA" },
-      "familyHistory": { "question": "Hatte ein Elternteil oder Geschwister in jungen Jahren einen Schlaganfall oder Herzinfarkt?", "label": "Familiäre Vorbelastung" }
+      "hypertension": {
+        "question": "Wurde bei Ihnen Bluthochdruck festgestellt?",
+        "label": "Bluthochdruck"
+      },
+      "diabetes": {
+        "question": "Wurde bei Ihnen Diabetes festgestellt?",
+        "label": "Diabetes"
+      },
+      "cholesterol": {
+        "question": "Wurde bei Ihnen ein erhöhter Cholesterinwert festgestellt?",
+        "label": "Erhöhtes Cholesterin"
+      },
+      "smoking": {
+        "question": "Rauchen Sie derzeit oder konsumieren Sie Tabak?",
+        "label": "Rauchen"
+      },
+      "alcohol": {
+        "question": "Trinken Sie regelmäßig mehr Alkohol, als in Ihrem Land empfohlen wird?",
+        "label": "Alkoholkonsum"
+      },
+      "inactivity": {
+        "question": "Sind Sie weniger als 150 Minuten pro Woche körperlich aktiv?",
+        "label": "Bewegungsmangel"
+      },
+      "overweight": {
+        "question": "Wurde bei Ihnen Übergewicht festgestellt?",
+        "label": "Übergewicht"
+      },
+      "atrialFibrillation": {
+        "question": "Wurde bei Ihnen Vorhofflimmern (unregelmäßiger Herzschlag) festgestellt?",
+        "label": "Vorhofflimmern"
+      },
+      "previousStroke": {
+        "question": "Hatten Sie bereits einen Schlaganfall oder eine TIA?",
+        "label": "Früherer Schlaganfall oder TIA"
+      },
+      "familyHistory": {
+        "question": "Hatte ein Elternteil oder Geschwister in jungen Jahren einen Schlaganfall oder Herzinfarkt?",
+        "label": "Familiäre Vorbelastung"
+      }
     },
     "discuss": {
       "hypertension": "Blutdruckeinstellung und wie oft gemessen werden sollte.",
@@ -277,15 +311,42 @@
       "familyHistory": "Ob frühere Vorsorgeuntersuchungen für Sie sinnvoll sind."
     },
     "recommendations": {
-      "nutrition": { "title": "Gesunde Ernährung", "body": "Essen Sie viel Gemüse, Obst, Vollkorn und Hülsenfrüchte. Reduzieren Sie Salz, verarbeitetes Fleisch und zuckerhaltige Getränke." },
-      "activity": { "title": "Bewegung", "body": "Streben Sie mindestens 150 Minuten moderate Bewegung pro Woche an, z. B. zügiges Gehen — sofern Ihre Ärztin/Ihr Arzt zustimmt." },
-      "bloodPressure": { "title": "Blutdruck kontrollieren", "body": "Bluthochdruck verursacht oft keine Beschwerden. Lassen Sie ihn regelmäßig messen und folgen Sie den ärztlichen Empfehlungen zur Selbstmessung." },
-      "smoking": { "title": "Rauchstopp", "body": "Mit dem Rauchen aufzuhören senkt das Schlaganfallrisiko. Holen Sie sich Unterstützung bei Fachpersonal oder einer Rauchstopp-Hotline." },
-      "alcohol": { "title": "Weniger Alkohol", "body": "Weniger Alkohol senkt Blutdruck und Schlaganfallrisiko. Orientieren Sie sich an den Empfehlungen Ihres Landes." },
-      "sleep": { "title": "Schlaf", "body": "Regelmäßiger, ausreichender Schlaf unterstützt die Herzgesundheit. Lautes Schnarchen mit Atemaussetzern sollte ärztlich abgeklärt werden." },
-      "diabetes": { "title": "Diabetes-Management", "body": "Nehmen Sie Kontrolltermine wahr und folgen Sie dem mit Ihrem Behandlungsteam vereinbarten Plan." },
-      "followUp": { "title": "Ärztliche Kontrollen", "body": "Regelmäßige Check-ups helfen, Risikofaktoren wie Bluthochdruck oder Vorhofflimmern früh zu erkennen." },
-      "adherence": { "title": "Verordnete Medikamente", "body": "Wenn Sie verordnete Medikamente nehmen, nehmen Sie sie wie mit Ihrer Ärztin/Ihrem Arzt vereinbart. Sprechen Sie vor jeder Änderung mit ihr/ihm." }
+      "nutrition": {
+        "title": "Gesunde Ernährung",
+        "body": "Die WHO empfiehlt eine ausgewogene Ernährung mit mindestens fünf Portionen Obst und Gemüse pro Tag sowie weniger Salz, gesättigten Fetten und Zucker."
+      },
+      "activity": {
+        "title": "Bewegung",
+        "body": "Die WHO empfiehlt mindestens 150 Minuten Bewegung mit mäßiger Intensität pro Woche, z. B. zügiges Gehen. Fragen Sie Ihre Ärztin/Ihren Arzt, was für Sie sicher ist."
+      },
+      "bloodPressure": {
+        "title": "Blutdruck kontrollieren",
+        "body": "Bluthochdruck verursacht oft keine Beschwerden. Lassen Sie ihn regelmäßig messen und folgen Sie den ärztlichen Empfehlungen zur Selbstmessung."
+      },
+      "smoking": {
+        "title": "Rauchstopp",
+        "body": "Mit dem Tabakkonsum aufzuhören und Passivrauch zu meiden senkt das Schlaganfallrisiko. Holen Sie sich Unterstützung bei Fachpersonal oder einer Rauchstopp-Hotline."
+      },
+      "alcohol": {
+        "title": "Weniger Alkohol",
+        "body": "Weniger Alkohol senkt Blutdruck und Schlaganfallrisiko. Orientieren Sie sich an den Empfehlungen Ihres Landes."
+      },
+      "sleep": {
+        "title": "Schlaf",
+        "body": "Regelmäßiger, ausreichender Schlaf unterstützt die Herzgesundheit. Lautes Schnarchen mit Atemaussetzern sollte ärztlich abgeklärt werden."
+      },
+      "diabetes": {
+        "title": "Diabetes-Management",
+        "body": "Nehmen Sie Kontrolltermine wahr und folgen Sie dem mit Ihrem Behandlungsteam vereinbarten Plan."
+      },
+      "followUp": {
+        "title": "Ärztliche Kontrollen",
+        "body": "Regelmäßige Check-ups helfen, Risikofaktoren wie Bluthochdruck oder Vorhofflimmern früh zu erkennen."
+      },
+      "adherence": {
+        "title": "Verordnete Medikamente",
+        "body": "Wenn Sie verordnete Medikamente nehmen, nehmen Sie sie wie mit Ihrer Ärztin/Ihrem Arzt vereinbart. Sprechen Sie vor jeder Änderung mit ihr/ihm."
+      }
     }
   },
   "tracker": {
@@ -368,17 +429,50 @@
     "you": "Sie",
     "assistantLabel": "Assistent",
     "kb": {
-      "symptoms": { "q": "Was sind die Warnzeichen eines Schlaganfalls?", "a": "Merken Sie sich BE-FAST: plötzlicher Gleichgewichtsverlust (Balance), plötzliche Sehstörungen (Eyes), hängendes Gesicht (Face), Armschwäche (Arms), Sprachstörung (Speech) — und Zeit (Time), sofort den Notruf zu wählen. Weitere plötzliche Zeichen sind starke Kopfschmerzen, Verwirrtheit oder einseitige Taubheit." },
-      "tia": { "q": "Was ist eine TIA (Mini-Schlaganfall)?", "a": "Eine transitorische ischämische Attacke verursacht Schlaganfall-ähnliche Symptome, die wieder verschwinden, oft nach Minuten. Sie ist ein Warnzeichen, dass ein Schlaganfall folgen kann, und muss notfallmäßig abgeklärt werden — auch wenn die Symptome weg sind." },
-      "types": { "q": "Welche Arten von Schlaganfall gibt es?", "a": "Ischämische Schlaganfälle entstehen durch eine verschlossene Arterie und sind am häufigsten. Hämorrhagische Schlaganfälle entstehen durch eine Blutung im oder am Gehirn. Beides sind Notfälle." },
-      "bloodPressure": { "q": "Warum ist der Blutdruck wichtig?", "a": "Bluthochdruck ist einer der wichtigsten beeinflussbaren Risikofaktoren für einen Schlaganfall. Er verursacht oft keine Beschwerden, daher sind regelmäßige Kontrollen wichtig. Ihre Ärztin/Ihr Arzt nennt Ihnen Ihre Zielwerte." },
-      "atrialFibrillation": { "q": "Was ist Vorhofflimmern?", "a": "Vorhofflimmern ist ein unregelmäßiger Herzrhythmus. Dabei können sich Gerinnsel im Herzen bilden, die ins Gehirn gelangen können. Betroffene sollten die Schlaganfallvorbeugung mit ihrer Ärztin/ihrem Arzt besprechen." },
-      "prevention": { "q": "Wie kann ich mein Schlaganfallrisiko senken?", "a": "Halten Sie den Blutdruck im Griff, rauchen Sie nicht, bewegen Sie sich, essen Sie ausgewogen und salzarm, trinken Sie wenig Alkohol, behandeln Sie Diabetes und Cholesterin und gehen Sie regelmäßig zu Kontrollen." },
-      "recovery": { "q": "Was passiert nach einem Schlaganfall?", "a": "Zur Genesung gehören oft Rehabilitation wie Physiotherapie, Logopädie und Ergotherapie. Die Behandlung der Risikofaktoren hilft, einem weiteren Schlaganfall vorzubeugen. Fortschritte sind oft noch über Monate möglich." },
-      "doctorQuestions": { "q": "Was sollte ich meine Ärztin/meinen Arzt fragen?", "a": "Zum Beispiel: Welche persönlichen Risikofaktoren habe ich? Welchen Blutdruck sollte ich anstreben? Wie oft sollte ich mich untersuchen lassen? Brauche ich Untersuchungen von Herzrhythmus oder Cholesterin? Bei welchen Zeichen muss ich den Notruf wählen?" },
-      "terms": { "q": "Was bedeuten Neurologe und Thrombolyse?", "a": "Eine Neurologin/ein Neurologe ist auf Gehirn und Nerven spezialisiert. Die Thrombolyse ist eine Klinikbehandlung, die bei ischämischem Schlaganfall manche Gerinnsel auflösen kann. Nur Ärztinnen und Ärzte entscheiden, ob sie geeignet ist — und sie muss schnell erfolgen." },
-      "wait": { "q": "Kann ich abwarten, ob die Symptome vergehen?", "a": "Nein. Warten Sie nie. Mögliche Schlaganfall-Symptome sind ein medizinischer Notfall, auch wenn sie sich bessern oder verschwinden. Rufen Sie sofort den Notruf." }
-    }
+      "symptoms": {
+        "q": "Was sind die Warnzeichen eines Schlaganfalls?",
+        "a": "Die WHO nennt diese plötzlichen Warnzeichen (BE-FAST): Gleichgewicht – plötzlicher Schwindel oder Gleichgewichtsverlust; Augen – plötzlicher Sehverlust; Gesicht – hängende Gesichtshälfte; Arme – Schwäche in einem oder beiden Armen; Sprache – verwaschene oder seltsame Sprache; Zeit – sofort den Notruf wählen. Auch plötzliche, sehr starke Kopfschmerzen können ein Zeichen sein."
+      },
+      "tia": {
+        "q": "Was ist eine TIA (Mini-Schlaganfall)?",
+        "a": "Eine transitorische ischämische Attacke verursacht Schlaganfall-ähnliche Symptome, die wieder verschwinden, meist nach Minuten. Sie ist ein Warnzeichen, dass ein Schlaganfall folgen kann, und ein Notfall: Rufen Sie den Notruf, auch wenn die Symptome weg sind."
+      },
+      "types": {
+        "q": "Welche Arten von Schlaganfall gibt es?",
+        "a": "Ischämische Schlaganfälle entstehen durch eine verschlossene Arterie und sind am häufigsten. Hämorrhagische Schlaganfälle entstehen durch eine Blutung im oder am Gehirn. Beides sind Notfälle."
+      },
+      "bloodPressure": {
+        "q": "Warum ist der Blutdruck wichtig?",
+        "a": "Bluthochdruck ist einer der wichtigsten beeinflussbaren Risikofaktoren für einen Schlaganfall. Er verursacht oft keine Beschwerden, daher sind regelmäßige Kontrollen wichtig. Ihre Ärztin/Ihr Arzt nennt Ihnen Ihre Zielwerte."
+      },
+      "atrialFibrillation": {
+        "q": "Was ist Vorhofflimmern?",
+        "a": "Vorhofflimmern ist ein unregelmäßiger Herzrhythmus. Dabei können sich Gerinnsel im Herzen bilden, die ins Gehirn gelangen können. Betroffene sollten die Schlaganfallvorbeugung mit ihrer Ärztin/ihrem Arzt besprechen."
+      },
+      "prevention": {
+        "q": "Wie kann ich mein Schlaganfallrisiko senken?",
+        "a": "Laut WHO senken Sie Ihr Risiko, wenn Sie Bluthochdruck behandeln lassen, keinen Tabak konsumieren, ausgewogen mit mindestens fünf Portionen Obst und Gemüse und weniger Salz essen, sich mindestens 150 Minuten pro Woche bewegen, wenig Alkohol trinken und Diabetes, Cholesterin und Vorhofflimmern gemeinsam mit Ihrer Ärztin/Ihrem Arzt behandeln."
+      },
+      "recovery": {
+        "q": "Was passiert nach einem Schlaganfall?",
+        "a": "Zur Genesung gehören oft Rehabilitation wie Physiotherapie, Logopädie und Ergotherapie. Die Behandlung der Risikofaktoren hilft, einem weiteren Schlaganfall vorzubeugen. Fortschritte sind oft noch über Monate möglich."
+      },
+      "doctorQuestions": {
+        "q": "Was sollte ich meine Ärztin/meinen Arzt fragen?",
+        "a": "Zum Beispiel: Welche persönlichen Risikofaktoren habe ich? Welchen Blutdruck sollte ich anstreben? Wie oft sollte ich mich untersuchen lassen? Brauche ich Untersuchungen von Herzrhythmus oder Cholesterin? Bei welchen Zeichen muss ich den Notruf wählen?"
+      },
+      "terms": {
+        "q": "Was bedeuten Neurologe und Thrombolyse?",
+        "a": "Eine Neurologin/ein Neurologe ist auf Gehirn und Nerven spezialisiert. Die Thrombolyse ist eine Klinikbehandlung, die bei ischämischem Schlaganfall manche Gerinnsel auflösen kann. Nur Ärztinnen und Ärzte entscheiden, ob sie geeignet ist — und sie muss schnell erfolgen."
+      },
+      "wait": {
+        "q": "Kann ich abwarten, ob die Symptome vergehen?",
+        "a": "Nein. Warten Sie nie. Mögliche Schlaganfall-Symptome sind ein medizinischer Notfall, auch wenn sie sich bessern oder verschwinden. Rufen Sie sofort den Notruf."
+      }
+    },
+    "enableAiTitle": "KI-Antworten erhalten",
+    "enableAiBody": "Mit Ihrer Einwilligung wird Ihre Frage (ohne Gesundheitsdaten) an die Online-KI gesendet, die nur auf Basis der geprüften Wissensbasis der App antwortet. Sie können dies jederzeit in den Datenschutzeinstellungen abschalten.",
+    "enableAiButton": "KI-Antworten aktivieren"
   },
   "family": {
     "title": "Sicherheit der Familie",
@@ -514,7 +608,8 @@
     "review": "Die medizinischen und notfallbezogenen Inhalte dieser Version müssen noch von qualifiziertem medizinischem Fachpersonal geprüft werden. Notrufnummern sind vor Veröffentlichung für jedes Land zu verifizieren.",
     "sourcesTitle": "Referenzquellen",
     "freeTitle": "Für immer kostenlos",
-    "free": "Keine Werbung, kein Abo, kein Datenverkauf."
+    "free": "Keine Werbung, kein Abo, kein Datenverkauf.",
+    "sourcesChecked": "Inhalte am {{date}} mit diesen Quellen abgeglichen."
   },
   "onboarding": {
     "slide1Title": "Erkennen",

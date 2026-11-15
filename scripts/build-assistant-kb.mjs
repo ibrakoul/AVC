@@ -7,9 +7,16 @@ import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SOURCES = {
-  symptoms: ['asa', 'nhs'], tia: ['nhs', 'asa'], types: ['nhs', 'eso'], bloodPressure: ['who', 'nhs'],
-  atrialFibrillation: ['nhs', 'eso'], prevention: ['who', 'nhs'], recovery: ['nhs', 'dsg'],
-  doctorQuestions: ['nhs'], terms: ['eso', 'nhs'], wait: ['nhs', 'asa'],
+  symptoms: ['who', 'dsh'],
+  tia: ['who', 'gesund'],
+  types: ['who', 'gesund'],
+  bloodPressure: ['who', 'whoHypertension'],
+  atrialFibrillation: ['who', 'gesund'],
+  prevention: ['who'],
+  recovery: ['who', 'gesund'],
+  doctorQuestions: ['gesund'],
+  terms: ['who', 'gesund'],
+  wait: ['dsh', 'gesund'],
 };
 
 export function buildKb() {

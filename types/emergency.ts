@@ -21,6 +21,8 @@ export interface CountryEmergencyConfig {
   primary: EmergencyNumber;
   /** Other valid emergency numbers (e.g. 112 in addition to a national one). */
   alternatives: EmergencyNumber[];
+  /** Numbers people may confuse with emergency numbers that must NOT be used for a stroke (shown as a warning, never dialled). */
+  notForStroke?: EmergencyNumber[];
   /** Official source that a reviewer must use to (re)verify this entry. */
   officialSource: { name: string; url: string };
   /** ISO date the entry was last checked against the official source, or null. */

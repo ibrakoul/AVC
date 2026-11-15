@@ -63,9 +63,9 @@ describe('AI assistant — FAQ mode and fallback', () => {
   });
 
   it('uses the server answer when available and filters unknown sources', async () => {
-    const invoke = jest.fn().mockResolvedValue({ answer: 'Grounded answer', sourceIds: ['nhs', 'evil'], emergency: false });
+    const invoke = jest.fn().mockResolvedValue({ answer: 'Grounded answer', sourceIds: ['who', 'evil'], emergency: false });
     const r = await askAssistant('What is a TIA?', 'en', { onlineConsent: true, invoke });
-    expect(r).toMatchObject({ mode: 'ai', text: 'Grounded answer', sourceIds: ['nhs'] });
+    expect(r).toMatchObject({ mode: 'ai', text: 'Grounded answer', sourceIds: ['who'] });
   });
 
   it('honours a server-side emergency flag', async () => {
@@ -78,5 +78,16 @@ describe('AI assistant — FAQ mode and fallback', () => {
     expect(await askAssistant('What is a TIA?', 'en', { onlineConsent: true, invoke: failing })).toMatchObject({ mode: 'faq', kbId: 'tia', fellBackToOffline: true });
     const garbage = jest.fn().mockResolvedValue({ nope: true });
     expect(await askAssistant('What is a TIA?', 'en', { onlineConsent: true, invoke: garbage })).toMatchObject({ mode: 'faq', fellBackToOffline: true });
+  });
+});
+
+describe('sources', () => {
+  it('every KB source id exists in the verified source list', () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { SOURCES } = require('@/constants/sources') as typeof import('@/constants/sources');
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { KNOWLEDGE_BASE } = require('@/features/assistant/knowledgeBase') as typeof import('@/features/assistant/knowledgeBase');
+    for (const e of KNOWLEDGE_BASE) for (const id of e.sourceIds) expect(SOURCES[id]).toBeDefined();
+    for (const s of Object.values(SOURCES)) expect(s.url).toMatch(/^https:\/\//);
   });
 });

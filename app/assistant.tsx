@@ -18,6 +18,7 @@ import { useAppSettings } from '@/hooks/useAppSettings';
 import { useEmergencyCountry } from '@/hooks/useEmergencyCountry';
 import { useTheme } from '@/hooks/useTheme';
 import { askAssistant, type AskResult } from '@/services/ai/assistantClient';
+import { recordConsent } from '@/services/api/syncService';
 import { isSupportedLanguage, type SupportedLanguage } from '@/types/i18n';
 
 interface Turn {
@@ -29,7 +30,7 @@ interface Turn {
 export default function AssistantScreen() {
   const { t, i18n } = useTranslation();
   const { c } = useTheme();
-  const { settings } = useAppSettings();
+  const { settings, update } = useAppSettings();
   const { config } = useEmergencyCountry();
   const [input, setInput] = useState('');
   const [turns, setTurns] = useState<Turn[]>([]);
@@ -54,6 +55,22 @@ export default function AssistantScreen() {
     <Screen testID="assistant-screen">
       <AppText>{t('assistant.intro')}</AppText>
       <Banner tone="info" icon="Bot" text={onlineMode ? t('assistant.onlineMode') : t('assistant.faqMode')} testID="assistant-mode" />
+      {isOnlineAssistantConfigured() && !settings.consents.assistantOnline ? (
+        <Card tone="alt" testID="assistant-consent">
+          <AppText variant="bodyStrong">{t('assistant.enableAiTitle')}</AppText>
+          <AppText variant="small">{t('assistant.enableAiBody')}</AppText>
+          <Button
+            testID="assistant-enable-ai"
+            variant="secondary"
+            icon="Bot"
+            label={t('assistant.enableAiButton')}
+            onPress={async () => {
+              await update({ consents: { ...settings.consents, assistantOnline: true } });
+              await recordConsent('assistant_online', true);
+            }}
+          />
+        </Card>
+      ) : null}
 
       {turns.map((turn) => (
         <View key={turn.id} style={styles.turn}>

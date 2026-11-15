@@ -1,7 +1,7 @@
 /**
- * Reference sources used by educational content and the assistant
- * knowledge base. ⚠️ Every URL and its mapping to content must be validated
- * by the medical reviewer before publication (see docs/MEDICAL_SAFETY.md).
+ * Reference sources. Each was opened and checked against the app content on
+ * `SOURCES_CHECKED_AT` (content cross-check, not a professional medical review).
+ * Re-check at least every 12 months and whenever content changes.
  */
 export interface ReferenceSource {
   id: string;
@@ -9,19 +9,18 @@ export interface ReferenceSource {
   url: string;
 }
 
+export const SOURCES_CHECKED_AT = '2026-11-15';
+
 export const SOURCES: Record<string, ReferenceSource> = {
-  nhs: { id: 'nhs', title: 'NHS — Stroke', url: 'https://www.nhs.uk/conditions/stroke/' },
-  asa: {
-    id: 'asa',
-    title: 'American Stroke Association — Stroke symptoms',
-    url: 'https://www.stroke.org/en/about-stroke/stroke-symptoms',
+  who: { id: 'who', title: 'World Health Organization — Stroke fact sheet (19 Dec 2025)', url: 'https://www.who.int/news-room/fact-sheets/detail/stroke' },
+  whoHypertension: { id: 'whoHypertension', title: 'World Health Organization — Hypertension fact sheet', url: 'https://www.who.int/news-room/fact-sheets/detail/hypertension' },
+  gesund: { id: 'gesund', title: 'gesund.bund.de (Bundesministerium für Gesundheit) — Schlaganfall', url: 'https://gesund.bund.de/schlaganfall' },
+  dsh: {
+    id: 'dsh',
+    title: 'Stiftung Deutsche Schlaganfall-Hilfe — Verhalten im Notfall',
+    url: 'https://www.schlaganfall-hilfe.de/de/verstehen-vermeiden/verhalten-im-notfall',
   },
-  who: {
-    id: 'who',
-    title: 'World Health Organization — Cardiovascular diseases fact sheet',
-    url: 'https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)',
-  },
-  eso: { id: 'eso', title: 'European Stroke Organisation', url: 'https://eso-stroke.org' },
-  dsg: { id: 'dsg', title: 'Stiftung Deutsche Schlaganfall-Hilfe', url: 'https://www.schlaganfall-hilfe.de' },
-  ameli: { id: 'ameli', title: 'Assurance Maladie (ameli.fr) — AVC', url: 'https://www.ameli.fr' },
+  cdc: { id: 'cdc', title: 'CDC — Signs and Symptoms of Stroke (BE FAST)', url: 'https://www.cdc.gov/stroke/signs-symptoms/index.html' },
+  eu112: { id: 'eu112', title: 'European Commission — 112, the EU emergency number', url: 'https://digital-strategy.ec.europa.eu/en/policies/112' },
+  kbv116117: { id: 'kbv116117', title: '116117.de — 116117 oder 112?', url: 'https://www.116117.de/de/aerztlicher-bereitschaftsdienst.php' },
 };

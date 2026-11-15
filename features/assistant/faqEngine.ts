@@ -42,7 +42,7 @@ export function answerOffline(question: string, language: SupportedLanguage): As
     emergency,
     medicationRefusal,
     kbId: entry?.id ?? (emergency ? 'wait' : null),
-    sourceIds: entry?.sourceIds ?? (emergency ? ['nhs', 'asa'] : []),
+    sourceIds: entry?.sourceIds ?? (emergency ? ['dsh', 'gesund'] : []),
     mode: 'faq',
   };
 }

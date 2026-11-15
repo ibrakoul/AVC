@@ -3,6 +3,9 @@
 Free, ad-free, international stroke **awareness, emergency-orientation and prevention** app for iOS and Android
 (Expo SDK 58 · React Native 0.88 · TypeScript strict · Expo Router).
 
+**Launch market: Germany 🇩🇪** (emergency number 112 verified; 116117 warning). Online AI assistant enabled at launch (requires the credentials below).
+Content is aligned with the WHO stroke fact sheet, gesund.bund.de and the Stiftung Deutsche Schlaganfall-Hilfe (checked 2026-11-15, see docs/MEDICAL_SAFETY.md).
+
 > ⚠️ **Not a medical device.** The app does not diagnose, detect, rule out or predict a stroke.
 > It is not clinically validated or certified. Medical content and emergency numbers **must be reviewed by
 > qualified professionals before any public release** — see [docs/MEDICAL_SAFETY.md](docs/MEDICAL_SAFETY.md).
@@ -78,6 +81,7 @@ npm i -g supabase                    # or use npx supabase
 supabase start                       # local stack (Docker)
 supabase db reset                    # applies migrations + seed
 supabase test db                     # pgTAP RLS tests (supabase/tests/database)
+# For Germany/GDPR create the project in an EU region (e.g. Frankfurt, eu-central-1)
 supabase link --project-ref <ref> && supabase db push
 supabase secrets set ANTHROPIC_API_KEY=... ASSISTANT_MODEL=claude-opus-5-5
 supabase functions deploy assistant
@@ -100,7 +104,7 @@ server-side refusal fallback enabled. Without credentials or consent the app use
 
 ## Tests
 
-* `npm test` — **14 suites, 174 tests, all passing** (last run on 2026-11-15). Covers: emergency rendering, number
+* `npm test` — **14 suites, 180 tests, all passing** (last run on 2026-11-15). `npx expo lint` and `npx tsc --noEmit`: clean. Covers: emergency rendering, number
   selection per country, `tel:` link & dialer failure, unknown country (no 112 assumption), FAST/BE-FAST navigation,
   each sudden-sign scenario (face, arm, speech, vision, balance), symptoms disappeared, "not sure", offline mode,
   user without account, onboarding not blocking emergency, language switching & translation parity, health data entry /

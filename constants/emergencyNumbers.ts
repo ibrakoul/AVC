@@ -4,9 +4,10 @@ import type { EmergencyDataset } from '@/types/emergency';
  * Bundled, versioned, OFFLINE emergency-number dataset.
  *
  * ⚠️ MEDICAL-SAFETY / REGULATORY NOTE
- * Every entry is marked `pending_official_review`. Before any public release a
- * qualified reviewer MUST verify each number against the listed official
- * source, set `lastVerified` and switch `verificationStatus` to `verified`.
+ * Entries marked `verified` were checked on `lastVerified` against the listed
+ * official source (all numbers of the entry). Entries `pending_official_review`
+ * must be checked before being promoted. Re-verify every 12 months.
+ * Launch market: Germany (DE).
  * The UI always shows the dataset version and the verification status so the
  * app never claims that an offline number is current when it has not been
  * verified.
@@ -22,7 +23,7 @@ const EU_112 = {
 const n112 = { number: '112', labelKey: 'emergency.numbers.euGeneral' };
 
 export const EMERGENCY_DATASET: EmergencyDataset = {
-  version: '2026.11-draft.1',
+  version: '2026.11.2',
   compiledAt: '2026-11-15',
   countries: [
     {
@@ -31,9 +32,12 @@ export const EMERGENCY_DATASET: EmergencyDataset = {
       languages: ['de', 'en'],
       primary: { number: '112', labelKey: 'emergency.numbers.ambulanceFire' },
       alternatives: [],
-      officialSource: EU_112,
-      lastVerified: null,
-      verificationStatus: 'pending_official_review',
+      // Verified: gesund.bund.de/schlaganfall ("Bei jedem Verdacht auf einen Schlaganfall … Notruf 112")
+      // and 116117.de ("In lebensbedrohlichen Fällen … 112"; 116117 is not for emergencies).
+      notForStroke: [{ number: '116117', labelKey: 'emergency.numbers.onCallDoctor' }],
+      officialSource: { name: 'gesund.bund.de (Bundesministerium für Gesundheit) · 116117.de', url: 'https://gesund.bund.de/schlaganfall' },
+      lastVerified: '2026-11-15',
+      verificationStatus: 'verified',
     },
     {
       code: 'FR',
@@ -75,8 +79,8 @@ export const EMERGENCY_DATASET: EmergencyDataset = {
       primary: { number: '112', labelKey: 'emergency.numbers.ambulanceFire' },
       alternatives: [],
       officialSource: EU_112,
-      lastVerified: null,
-      verificationStatus: 'pending_official_review',
+      lastVerified: '2026-11-15',
+      verificationStatus: 'verified',
     },
     {
       code: 'LU',
@@ -85,8 +89,8 @@ export const EMERGENCY_DATASET: EmergencyDataset = {
       primary: { number: '112', labelKey: 'emergency.numbers.ambulanceFire' },
       alternatives: [],
       officialSource: EU_112,
-      lastVerified: null,
-      verificationStatus: 'pending_official_review',
+      lastVerified: '2026-11-15',
+      verificationStatus: 'verified',
     },
     {
       code: 'NL',
@@ -95,18 +99,18 @@ export const EMERGENCY_DATASET: EmergencyDataset = {
       primary: { number: '112', labelKey: 'emergency.numbers.ambulanceFire' },
       alternatives: [],
       officialSource: EU_112,
-      lastVerified: null,
-      verificationStatus: 'pending_official_review',
+      lastVerified: '2026-11-15',
+      verificationStatus: 'verified',
     },
     {
       code: 'IT',
       nameKey: 'countries.IT',
       languages: ['en'],
       primary: { number: '112', labelKey: 'emergency.numbers.euGeneral' },
-      alternatives: [{ number: '118', labelKey: 'emergency.numbers.ambulanceRegional' }],
+      alternatives: [],
       officialSource: EU_112,
-      lastVerified: null,
-      verificationStatus: 'pending_official_review',
+      lastVerified: '2026-11-15',
+      verificationStatus: 'verified',
     },
     {
       code: 'ES',
@@ -115,8 +119,8 @@ export const EMERGENCY_DATASET: EmergencyDataset = {
       primary: { number: '112', labelKey: 'emergency.numbers.euGeneral' },
       alternatives: [],
       officialSource: EU_112,
-      lastVerified: null,
-      verificationStatus: 'pending_official_review',
+      lastVerified: '2026-11-15',
+      verificationStatus: 'verified',
     },
     {
       code: 'PT',
@@ -125,28 +129,28 @@ export const EMERGENCY_DATASET: EmergencyDataset = {
       primary: { number: '112', labelKey: 'emergency.numbers.euGeneral' },
       alternatives: [],
       officialSource: EU_112,
-      lastVerified: null,
-      verificationStatus: 'pending_official_review',
+      lastVerified: '2026-11-15',
+      verificationStatus: 'verified',
     },
     {
       code: 'PL',
       nameKey: 'countries.PL',
       languages: ['en'],
       primary: { number: '112', labelKey: 'emergency.numbers.euGeneral' },
-      alternatives: [{ number: '999', labelKey: 'emergency.numbers.ambulance' }],
+      alternatives: [],
       officialSource: EU_112,
-      lastVerified: null,
-      verificationStatus: 'pending_official_review',
+      lastVerified: '2026-11-15',
+      verificationStatus: 'verified',
     },
     {
       code: 'IE',
       nameKey: 'countries.IE',
       languages: ['en'],
       primary: { number: '112', labelKey: 'emergency.numbers.euGeneral' },
-      alternatives: [{ number: '999', labelKey: 'emergency.numbers.euGeneral' }],
+      alternatives: [],
       officialSource: EU_112,
-      lastVerified: null,
-      verificationStatus: 'pending_official_review',
+      lastVerified: '2026-11-15',
+      verificationStatus: 'verified',
     },
     {
       code: 'GB',

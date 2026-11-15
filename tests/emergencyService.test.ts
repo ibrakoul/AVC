@@ -73,8 +73,23 @@ describe('emergency phone link', () => {
 });
 
 describe('offline dataset verification status', () => {
+  it('Germany (launch market) is verified with an official source and a recent date', () => {
+    const de = getCountryConfig('DE')!;
+    expect(de).toMatchObject({ verificationStatus: 'verified', lastVerified: '2026-11-15' });
+    expect(de.officialSource.url).toBe('https://gesund.bund.de/schlaganfall');
+    expect(requiresVerification(de, new Date('2026-12-01'))).toBe(false);
+    expect(de.notForStroke?.map((n) => n.number)).toEqual(['116117']);
+  });
   it('flags unverified entries as requiring verification', () => {
-    expect(requiresVerification(getCountryConfig('DE')!)).toBe(true);
+    expect(requiresVerification(getCountryConfig('FR')!)).toBe(true);
+  });
+  it('verified entries only contain verified numbers (no leftover unverified alternatives)', () => {
+    for (const c of EMERGENCY_DATASET.countries.filter((x) => x.verificationStatus === 'verified')) {
+      expect(c.lastVerified).toBeTruthy();
+      if (c.officialSource === EMERGENCY_DATASET.countries.find((x) => x.code === 'NL')!.officialSource) {
+        expect([c.primary.number, ...c.alternatives.map((a) => a.number)]).toEqual(['112']);
+      }
+    }
   });
   it('flags verified entries older than a year', () => {
     const base = getCountryConfig('DE')!;

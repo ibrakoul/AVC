@@ -29,7 +29,7 @@ export interface KbEntry {
 export const KNOWLEDGE_BASE: readonly KbEntry[] = [
   {
     id: 'symptoms',
-    sourceIds: ['asa', 'nhs'],
+    sourceIds: ['who', 'dsh'],
     keywords: {
       en: ['sign', 'signs', 'symptom', 'symptoms', 'fast', 'befast', 'warning', 'recognize', 'recognise'],
       fr: ['signe', 'signes', 'symptome', 'symptomes', 'fast', 'befast', 'alerte', 'reconnaitre'],
@@ -38,7 +38,7 @@ export const KNOWLEDGE_BASE: readonly KbEntry[] = [
   },
   {
     id: 'tia',
-    sourceIds: ['nhs', 'asa'],
+    sourceIds: ['who', 'gesund'],
     keywords: {
       en: ['tia', 'transient', 'mini', 'ministroke', 'mini-stroke'],
       fr: ['ait', 'transitoire', 'mini'],
@@ -47,7 +47,7 @@ export const KNOWLEDGE_BASE: readonly KbEntry[] = [
   },
   {
     id: 'types',
-    sourceIds: ['nhs', 'eso'],
+    sourceIds: ['who', 'gesund'],
     keywords: {
       en: ['type', 'types', 'ischemic', 'ischaemic', 'hemorrhagic', 'haemorrhagic', 'bleed', 'clot'],
       fr: ['type', 'types', 'ischemique', 'hemorragique', 'caillot', 'saignement'],
@@ -56,7 +56,7 @@ export const KNOWLEDGE_BASE: readonly KbEntry[] = [
   },
   {
     id: 'bloodPressure',
-    sourceIds: ['who', 'nhs'],
+    sourceIds: ['who', 'whoHypertension'],
     keywords: {
       en: ['blood pressure', 'pressure', 'hypertension'],
       fr: ['tension', 'hypertension', 'pression'],
@@ -65,7 +65,7 @@ export const KNOWLEDGE_BASE: readonly KbEntry[] = [
   },
   {
     id: 'atrialFibrillation',
-    sourceIds: ['nhs', 'eso'],
+    sourceIds: ['who', 'gesund'],
     keywords: {
       en: ['atrial', 'fibrillation', 'afib', 'irregular', 'heartbeat', 'rhythm'],
       fr: ['fibrillation', 'atriale', 'auriculaire', 'irregulier', 'rythme'],
@@ -74,7 +74,7 @@ export const KNOWLEDGE_BASE: readonly KbEntry[] = [
   },
   {
     id: 'prevention',
-    sourceIds: ['who', 'nhs'],
+    sourceIds: ['who'],
     keywords: {
       en: ['prevent', 'prevention', 'reduce', 'lower', 'risk', 'avoid'],
       fr: ['prevenir', 'prevention', 'reduire', 'risque', 'eviter'],
@@ -83,7 +83,7 @@ export const KNOWLEDGE_BASE: readonly KbEntry[] = [
   },
   {
     id: 'recovery',
-    sourceIds: ['nhs', 'dsg'],
+    sourceIds: ['who', 'gesund'],
     keywords: {
       en: ['recovery', 'after', 'rehabilitation', 'rehab', 'survivor', 'therapy'],
       fr: ['recuperation', 'apres', 'reeducation', 'therapie', 'survivant'],
@@ -92,7 +92,7 @@ export const KNOWLEDGE_BASE: readonly KbEntry[] = [
   },
   {
     id: 'doctorQuestions',
-    sourceIds: ['nhs'],
+    sourceIds: ['gesund'],
     keywords: {
       en: ['doctor', 'appointment', 'ask', 'questions', 'gp'],
       fr: ['medecin', 'rendez-vous', 'demander', 'questions', 'consultation'],
@@ -101,7 +101,7 @@ export const KNOWLEDGE_BASE: readonly KbEntry[] = [
   },
   {
     id: 'terms',
-    sourceIds: ['eso', 'nhs'],
+    sourceIds: ['who', 'gesund'],
     keywords: {
       en: ['neurologist', 'thrombolysis', 'thrombectomy', 'mean', 'term', 'definition'],
       fr: ['neurologue', 'thrombolyse', 'thrombectomie', 'signifie', 'definition', 'terme'],
@@ -110,7 +110,7 @@ export const KNOWLEDGE_BASE: readonly KbEntry[] = [
   },
   {
     id: 'wait',
-    sourceIds: ['nhs', 'asa'],
+    sourceIds: ['dsh', 'gesund'],
     keywords: {
       en: ['wait', 'pass', 'go away', 'disappear', 'later'],
       fr: ['attendre', 'passer', 'disparaitre', 'plus tard'],

@@ -97,23 +97,24 @@
       "euGeneral": "European emergency number",
       "deafSms": "For deaf or hard-of-hearing people (SMS/text)",
       "ambulanceRegional": "Ambulance (some regions)",
-      "mobileAlternative": "Alternative from mobile phones"
+      "mobileAlternative": "Alternative from mobile phones",
+      "onCallDoctor": "medical on-call service for non-life-threatening illness"
     },
     "alsoValid": "Also valid",
     "stepsTitle": "What to do now",
     "steps": [
-      "Call emergency services immediately. Say: “I think this is a stroke.”",
-      "Note the time the symptoms started, or when the person was last seen well.",
-      "Stay with the person. Keep them calm and comfortable.",
-      "If the person is drowsy, vomiting or unconscious but breathing, place them on their side (recovery position).",
-      "Unlock the door and turn on lights so responders can reach you.",
-      "Gather the person's medication list and medical documents if possible."
+      "Call emergency services immediately and say: “Suspected stroke.”",
+      "Briefly describe the symptoms and say when they started, or when the person was last seen without symptoms.",
+      "Do not leave the person alone. Keep them calm, tell them help is coming, and loosen tight clothing.",
+      "Watch breathing and consciousness. If the person is unconscious but breathing, place them in the recovery position. Do not raise the upper body of an unconscious person.",
+      "If the person stops breathing, start resuscitation (CPR). The dispatcher will guide you.",
+      "Unlock the door, turn on lights and gather the person's medication list if possible."
     ],
     "dontTitle": "Do NOT",
     "dont": [
-      "Do not wait to see if the symptoms go away.",
+      "Do not wait to see if the symptoms go away — even if they improve.",
       "Do not give aspirin, blood thinners or any other medication.",
-      "Do not give food or drink.",
+      "Do not give anything to drink or eat (risk of swallowing problems).",
       "Do not let the person drive themselves to hospital."
     ],
     "timesTitle": "Important times",
@@ -130,11 +131,11 @@
     "minutesAgo": "{{count}} min ago",
     "tellTitle": "Tell the emergency responders",
     "tell": [
-      "What you observed (face, arm, speech, balance, vision).",
-      "The time symptoms started or the last-known-well time.",
-      "Current medication, especially blood thinners.",
-      "Known conditions: previous stroke, diabetes, heart rhythm problems.",
-      "Your exact address and how to get in."
+      "Where: exact address, floor and how to get in.",
+      "What: “Suspected stroke.”",
+      "Which symptoms: speech, face, arm/leg, vision, dizziness, severe headache.",
+      "Since when: time symptoms started, or when the person was last seen without symptoms.",
+      "Who is calling: your name and a call-back number. Current medication (especially blood thinners) if known."
     ],
     "contactsTitle": "Emergency contacts",
     "noContacts": "No emergency contacts yet.",
@@ -148,7 +149,10 @@
     "availableOffline": "Available offline",
     "triggerTitle": "You reported a possible stroke sign",
     "triggerBody": "This is a medical emergency. Call now — do not wait for the symptoms to disappear.",
-    "triggerDisappeared": "Symptoms that have gone away still need urgent medical assessment. They can be a warning sign (TIA) of a stroke."
+    "triggerDisappeared": "Symptoms that have gone away still need urgent medical assessment. They can be a warning sign (TIA) of a stroke.",
+    "dispatcherGuides": "You do not need to remember everything — the dispatcher will guide you through the call.",
+    "notForStrokeTitle": "Wrong number for a stroke",
+    "notForStroke": "{{number}} ({{label}}) is NOT for a suspected stroke. Call {{primary}}."
   },
   "stroke": {
     "title": "Recognize a stroke",
@@ -170,7 +174,7 @@
       "E": {
         "word": "Eyes",
         "title": "Sudden vision problems",
-        "description": "Sudden loss of vision in one or both eyes, or double vision.",
+        "description": "Sudden loss of vision in one or both eyes, loss of part of the field of vision, or double vision.",
         "check": "Does the person suddenly see less, see double or lose part of their vision?"
       },
       "F": {
@@ -182,8 +186,8 @@
       "A": {
         "word": "Arms",
         "title": "Arm weakness",
-        "description": "Sudden weakness, numbness or inability to raise one arm.",
-        "check": "Ask the person to raise both arms. Does one arm drift down or not move?"
+        "description": "Sudden weakness, numbness or paralysis of one or both arms.",
+        "check": "Ask the person to raise both arms forward with palms up. Does one arm drift down or not move?"
       },
       "S": {
         "word": "Speech",
@@ -206,9 +210,9 @@
     "noSignsNote": "Not seeing these signs does NOT rule out a stroke. Other sudden signs include severe headache, confusion or numbness. If you are worried, call.",
     "otherSignsTitle": "Other possible sudden signs",
     "otherSigns": [
-      "Sudden severe headache with no known cause",
+      "Sudden severe headache with no known cause, sometimes with nausea or vomiting",
       "Sudden confusion or trouble understanding",
-      "Sudden numbness of the face, arm or leg, especially on one side"
+      "Sudden numbness or paralysis of the face, arm or leg, usually on one side of the body"
     ],
     "learnTypes": "Learn about stroke types and TIA"
   },
@@ -216,18 +220,18 @@
     "title": "About stroke",
     "intro": "A stroke happens when blood flow to part of the brain is blocked or when a blood vessel in the brain bursts. Brain cells start to die within minutes — fast treatment saves brain tissue.",
     "ischemicTitle": "Ischemic stroke",
-    "ischemicBody": "The most common type. A blood clot or narrowing blocks an artery supplying the brain. Some treatments must be given within hours, which is why calling immediately is essential.",
+    "ischemicBody": "The most common type. A blood clot blocks an artery supplying the brain. Hospital treatments such as thrombolysis or thrombectomy must be started within hours of symptom onset — which is why calling immediately is essential.",
     "hemorrhagicTitle": "Hemorrhagic stroke",
     "hemorrhagicBody": "A blood vessel in or around the brain bursts and bleeds. High blood pressure is an important risk factor. It is also a medical emergency.",
     "tiaTitle": "Transient ischemic attack (TIA)",
-    "tiaBody": "Stroke-like symptoms that go away, often within minutes. A TIA is a warning sign: the risk of a stroke in the following days can be high. It needs urgent medical assessment, even if you feel fine again.",
+    "tiaBody": "Stroke-like symptoms that go away by themselves, usually within minutes, sometimes after a few hours. A TIA is a warning sign: the risk of a stroke afterwards is high. It is an emergency — call even if you feel fine again.",
     "disappearedTitle": "Symptoms gone? Still call.",
     "disappearedBody": "Only a medical team can tell a TIA from a stroke. Symptoms disappearing does not mean the danger has passed.",
     "whyTimeTitle": "Why time matters",
     "whyTimeBody": "Hospitals can offer treatments that limit brain damage, but many must be started quickly. Knowing when symptoms started helps doctors choose treatment.",
     "afterTitle": "Life after stroke",
     "afterBody": "Recovery often involves rehabilitation (physiotherapy, speech therapy, occupational therapy) and treatment of risk factors to prevent another stroke. Support groups can help survivors and families.",
-    "reviewNotice": "Educational content — pending review by medical professionals before publication."
+    "reviewNotice": "Educational content checked against WHO, the German Federal Ministry of Health portal (gesund.bund.de) and the German Stroke Foundation. Not a substitute for medical advice."
   },
   "prevention": {
     "title": "Prevention",
@@ -253,16 +257,46 @@
       "privacy": "Your answers stay on this device unless you enable cloud sync in Privacy settings."
     },
     "factors": {
-      "hypertension": { "question": "Have you been told you have high blood pressure?", "label": "High blood pressure" },
-      "diabetes": { "question": "Have you been told you have diabetes?", "label": "Diabetes" },
-      "cholesterol": { "question": "Have you been told you have high cholesterol?", "label": "High cholesterol" },
-      "smoking": { "question": "Do you currently smoke or use tobacco?", "label": "Smoking" },
-      "alcohol": { "question": "Do you regularly drink more alcohol than recommended in your country?", "label": "Alcohol consumption" },
-      "inactivity": { "question": "Are you physically active less than 150 minutes per week?", "label": "Physical inactivity" },
-      "overweight": { "question": "Have you been told you are overweight?", "label": "Overweight" },
-      "atrialFibrillation": { "question": "Have you been told you have atrial fibrillation (irregular heartbeat)?", "label": "Atrial fibrillation" },
-      "previousStroke": { "question": "Have you had a stroke or TIA before?", "label": "Previous stroke or TIA" },
-      "familyHistory": { "question": "Has a parent, brother or sister had a stroke or heart attack at a young age?", "label": "Family history" }
+      "hypertension": {
+        "question": "Have you been told you have high blood pressure?",
+        "label": "High blood pressure"
+      },
+      "diabetes": {
+        "question": "Have you been told you have diabetes?",
+        "label": "Diabetes"
+      },
+      "cholesterol": {
+        "question": "Have you been told you have high cholesterol?",
+        "label": "High cholesterol"
+      },
+      "smoking": {
+        "question": "Do you currently smoke or use tobacco?",
+        "label": "Smoking"
+      },
+      "alcohol": {
+        "question": "Do you regularly drink more alcohol than recommended in your country?",
+        "label": "Alcohol consumption"
+      },
+      "inactivity": {
+        "question": "Are you physically active less than 150 minutes per week?",
+        "label": "Physical inactivity"
+      },
+      "overweight": {
+        "question": "Have you been told you are overweight?",
+        "label": "Overweight"
+      },
+      "atrialFibrillation": {
+        "question": "Have you been told you have atrial fibrillation (irregular heartbeat)?",
+        "label": "Atrial fibrillation"
+      },
+      "previousStroke": {
+        "question": "Have you had a stroke or TIA before?",
+        "label": "Previous stroke or TIA"
+      },
+      "familyHistory": {
+        "question": "Has a parent, brother or sister had a stroke or heart attack at a young age?",
+        "label": "Family history"
+      }
     },
     "discuss": {
       "hypertension": "Blood pressure control and how often to measure it.",
@@ -277,15 +311,42 @@
       "familyHistory": "Whether earlier screening makes sense for you."
     },
     "recommendations": {
-      "nutrition": { "title": "Healthy nutrition", "body": "Eat plenty of vegetables, fruit, whole grains and legumes. Limit salt, processed meat and sugary drinks." },
-      "activity": { "title": "Physical activity", "body": "Aim for at least 150 minutes of moderate activity per week, such as brisk walking, if your doctor agrees." },
-      "bloodPressure": { "title": "Blood pressure monitoring", "body": "High blood pressure often has no symptoms. Have it checked regularly and follow your doctor's advice on home measurement." },
-      "smoking": { "title": "Stop smoking", "body": "Stopping smoking lowers stroke risk. Ask a healthcare professional or a national quit line for support." },
-      "alcohol": { "title": "Reduce alcohol", "body": "Drinking less alcohol lowers blood pressure and stroke risk. Follow your country's guidelines." },
-      "sleep": { "title": "Sleep", "body": "Regular, sufficient sleep supports heart health. Loud snoring with breathing pauses should be discussed with a doctor." },
-      "diabetes": { "title": "Diabetes management", "body": "Keep regular appointments and follow the management plan agreed with your care team." },
-      "followUp": { "title": "Medical follow-up", "body": "Regular check-ups help detect risk factors such as high blood pressure or atrial fibrillation early." },
-      "adherence": { "title": "Prescribed medication", "body": "If you take prescribed medication, take it as agreed with your doctor. Talk to them before changing anything." }
+      "nutrition": {
+        "title": "Healthy nutrition",
+        "body": "WHO recommends a balanced diet with at least five servings of fruit and vegetables a day, and less salt, saturated fat and sugar."
+      },
+      "activity": {
+        "title": "Physical activity",
+        "body": "WHO recommends at least 150 minutes of moderate-intensity physical activity per week, such as brisk walking. Ask your doctor what is safe for you."
+      },
+      "bloodPressure": {
+        "title": "Blood pressure monitoring",
+        "body": "High blood pressure often has no symptoms. Have it checked regularly and follow your doctor's advice on home measurement."
+      },
+      "smoking": {
+        "title": "Stop smoking",
+        "body": "Stopping tobacco use and avoiding second-hand smoke lowers stroke risk. Ask a healthcare professional or a national quit line for support."
+      },
+      "alcohol": {
+        "title": "Reduce alcohol",
+        "body": "Limiting alcohol lowers blood pressure and stroke risk. Follow your country's guidelines."
+      },
+      "sleep": {
+        "title": "Sleep",
+        "body": "Regular, sufficient sleep supports heart health. Loud snoring with breathing pauses should be discussed with a doctor."
+      },
+      "diabetes": {
+        "title": "Diabetes management",
+        "body": "Keep regular appointments and follow the management plan agreed with your care team."
+      },
+      "followUp": {
+        "title": "Medical follow-up",
+        "body": "Regular check-ups help detect risk factors such as high blood pressure or atrial fibrillation early."
+      },
+      "adherence": {
+        "title": "Prescribed medication",
+        "body": "If you take prescribed medication, take it as agreed with your doctor. Talk to them before changing anything."
+      }
     }
   },
   "tracker": {
@@ -368,17 +429,50 @@
     "you": "You",
     "assistantLabel": "Assistant",
     "kb": {
-      "symptoms": { "q": "What are the warning signs of stroke?", "a": "Use BE-FAST: sudden loss of Balance, sudden vision problems (Eyes), Face drooping, Arm weakness, Speech difficulty — and Time to call emergency services immediately. Other sudden signs include severe headache, confusion or numbness on one side." },
-      "tia": { "q": "What is a TIA (mini-stroke)?", "a": "A transient ischemic attack causes stroke-like symptoms that go away, often within minutes. It is a warning sign that a stroke may follow. It needs emergency assessment even if the symptoms have gone." },
-      "types": { "q": "What types of stroke exist?", "a": "Ischemic strokes are caused by a blocked artery and are the most common. Hemorrhagic strokes are caused by bleeding in or around the brain. Both are emergencies." },
-      "bloodPressure": { "q": "Why does blood pressure matter?", "a": "High blood pressure is one of the most important modifiable risk factors for stroke. It often causes no symptoms, so regular checks are important. Your doctor can tell you what targets apply to you." },
-      "atrialFibrillation": { "q": "What is atrial fibrillation?", "a": "Atrial fibrillation is an irregular heart rhythm. It can allow clots to form in the heart, which may travel to the brain. People with atrial fibrillation should discuss stroke prevention with their doctor." },
-      "prevention": { "q": "How can I lower my stroke risk?", "a": "Keep blood pressure under control, don't smoke, be physically active, eat a balanced diet low in salt, limit alcohol, manage diabetes and cholesterol, and attend regular check-ups." },
-      "recovery": { "q": "What happens after a stroke?", "a": "Recovery often includes rehabilitation such as physiotherapy, speech therapy and occupational therapy. Treating risk factors helps prevent another stroke. Progress can continue for months." },
-      "doctorQuestions": { "q": "What should I ask my doctor?", "a": "You could ask: What are my personal risk factors? What blood pressure should I aim for? How often should I be checked? Do I need tests for heart rhythm or cholesterol? What signs mean I should call emergency services?" },
-      "terms": { "q": "What do neurologist and thrombolysis mean?", "a": "A neurologist is a doctor specialised in the brain and nerves. Thrombolysis is a hospital treatment that can dissolve some clots in ischemic stroke. Only doctors can decide whether it is suitable, and it must be given quickly." },
-      "wait": { "q": "Can I wait to see if symptoms pass?", "a": "No. Never wait. Possible stroke symptoms are a medical emergency, even if they improve or disappear. Call emergency services immediately." }
-    }
+      "symptoms": {
+        "q": "What are the warning signs of stroke?",
+        "a": "WHO lists these sudden warning signs (BE-FAST): Balance – sudden dizziness or loss of balance; Eyes – sudden vision loss; Face – facial droop; Arms – weakness in one or both arms; Speech – slurred or strange speech; Time – call emergency services immediately. A sudden severe headache can also be a sign."
+      },
+      "tia": {
+        "q": "What is a TIA (mini-stroke)?",
+        "a": "A transient ischaemic attack causes stroke-like symptoms that go away, usually within minutes. It is a warning sign that a stroke may follow and is an emergency: call emergency services even if the symptoms have gone."
+      },
+      "types": {
+        "q": "What types of stroke exist?",
+        "a": "Ischemic strokes are caused by a blocked artery and are the most common. Hemorrhagic strokes are caused by bleeding in or around the brain. Both are emergencies."
+      },
+      "bloodPressure": {
+        "q": "Why does blood pressure matter?",
+        "a": "High blood pressure is one of the most important modifiable risk factors for stroke. It often causes no symptoms, so regular checks are important. Your doctor can tell you what targets apply to you."
+      },
+      "atrialFibrillation": {
+        "q": "What is atrial fibrillation?",
+        "a": "Atrial fibrillation is an irregular heart rhythm. It can allow clots to form in the heart, which may travel to the brain. People with atrial fibrillation should discuss stroke prevention with their doctor."
+      },
+      "prevention": {
+        "q": "How can I lower my stroke risk?",
+        "a": "According to WHO, you can lower your risk by controlling high blood pressure, not using tobacco, eating a balanced diet with at least five servings of fruit and vegetables and less salt, being active at least 150 minutes a week, limiting alcohol, and managing diabetes, cholesterol and atrial fibrillation with your doctor."
+      },
+      "recovery": {
+        "q": "What happens after a stroke?",
+        "a": "Recovery often includes rehabilitation such as physiotherapy, speech therapy and occupational therapy. Treating risk factors helps prevent another stroke. Progress can continue for months."
+      },
+      "doctorQuestions": {
+        "q": "What should I ask my doctor?",
+        "a": "You could ask: What are my personal risk factors? What blood pressure should I aim for? How often should I be checked? Do I need tests for heart rhythm or cholesterol? What signs mean I should call emergency services?"
+      },
+      "terms": {
+        "q": "What do neurologist and thrombolysis mean?",
+        "a": "A neurologist is a doctor specialised in the brain and nerves. Thrombolysis is a hospital treatment that can dissolve some clots in ischemic stroke. Only doctors can decide whether it is suitable, and it must be given quickly."
+      },
+      "wait": {
+        "q": "Can I wait to see if symptoms pass?",
+        "a": "No. Never wait. Possible stroke symptoms are a medical emergency, even if they improve or disappear. Call emergency services immediately."
+      }
+    },
+    "enableAiTitle": "Get AI answers",
+    "enableAiBody": "With your consent, your question (without any health data) is sent to the online AI, which answers only from the app's reviewed knowledge base. You can turn this off at any time in Privacy settings.",
+    "enableAiButton": "Enable AI answers"
   },
   "family": {
     "title": "Family safety",
@@ -514,7 +608,8 @@
     "review": "Medical and emergency content in this version is pending review by qualified medical professionals. Emergency numbers must be verified for each country before publication.",
     "sourcesTitle": "Reference sources",
     "freeTitle": "Free forever",
-    "free": "No advertising, no subscription, no sale of data."
+    "free": "No advertising, no subscription, no sale of data.",
+    "sourcesChecked": "Content checked against these sources on {{date}}."
   },
   "onboarding": {
     "slide1Title": "Recognize",

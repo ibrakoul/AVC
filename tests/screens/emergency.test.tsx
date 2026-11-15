@@ -79,7 +79,7 @@ describe('Emergency screen', () => {
     expect(screen.getByText(/What to do now/)).toBeTruthy();
     expect(screen.getAllByText(/Do not give aspirin, blood thinners/).length).toBeGreaterThan(0);
     expect(screen.getByTestId('emergency-call-button')).toBeTruthy();
-    expect(screen.getByTestId('verification-status')).toHaveTextContent(/not yet been verified/);
+    expect(screen.getByTestId('verification-status')).toHaveTextContent(/Verified against the official source/);
   });
 
   it('is reachable before onboarding is completed (no gate)', async () => {
@@ -101,6 +101,18 @@ describe('Emergency screen', () => {
     await renderApp('/emergency?trigger=signs_disappeared');
     expect(await screen.findByTestId('emergency-trigger-banner')).toBeTruthy();
     expect(screen.getByText(/can be a warning sign \(TIA\)/)).toBeTruthy();
+  });
+
+  it('Germany: warns that 116117 is not for a suspected stroke (never offered as a call)', async () => {
+    await renderApp('/emergency');
+    expect(await screen.findByTestId('not-for-stroke-116117')).toHaveTextContent(/116117 .* is NOT for a suspected stroke\. Call 112\./);
+    expect(screen.queryByTestId('alt-number-116117')).toBeNull();
+  });
+
+  it('shows "pending verification" for countries not yet verified (FR)', async () => {
+    await seedSettings({ countryCode: 'FR', countryConfirmed: true });
+    await renderApp('/emergency');
+    expect(await screen.findByTestId('verification-status')).toHaveTextContent(/not yet been verified/);
   });
 
   it('is fully translated (German)', async () => {

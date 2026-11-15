@@ -97,23 +97,24 @@
       "euGeneral": "Numéro d’urgence européen",
       "deafSms": "Pour les personnes sourdes ou malentendantes (SMS/texte)",
       "ambulanceRegional": "Ambulance (certaines régions)",
-      "mobileAlternative": "Alternative depuis un mobile"
+      "mobileAlternative": "Alternative depuis un mobile",
+      "onCallDoctor": "service médical de garde pour les maladies sans danger vital"
     },
     "alsoValid": "Également valable",
     "stepsTitle": "Que faire maintenant",
     "steps": [
-      "Appelez immédiatement les secours. Dites : « Je pense que c’est un AVC. »",
-      "Notez l’heure de début des symptômes ou le dernier moment où la personne allait bien.",
-      "Restez avec la personne. Gardez-la calme et installée confortablement.",
-      "Si la personne est somnolente, vomit ou est inconsciente mais respire, placez-la sur le côté (position latérale de sécurité).",
-      "Déverrouillez la porte et allumez les lumières pour faciliter l’accès des secours.",
-      "Si possible, rassemblez la liste des médicaments et les documents médicaux de la personne."
+      "Appelez immédiatement les secours et dites : « Suspicion d’AVC ».",
+      "Décrivez brièvement les symptômes et indiquez quand ils ont commencé, ou quand la personne a été vue sans symptômes pour la dernière fois.",
+      "Ne laissez pas la personne seule. Rassurez-la, dites-lui que les secours arrivent et desserrez les vêtements serrés.",
+      "Surveillez la respiration et la conscience. Si la personne est inconsciente mais respire, mettez-la en position latérale de sécurité. Ne relevez pas le haut du corps d’une personne inconsciente.",
+      "Si la personne ne respire plus, commencez la réanimation (massage cardiaque). Le régulateur vous guidera.",
+      "Déverrouillez la porte, allumez les lumières et préparez si possible la liste des médicaments."
     ],
     "dontTitle": "NE PAS",
     "dont": [
-      "Ne pas attendre de voir si les symptômes disparaissent.",
+      "Ne pas attendre de voir si les symptômes disparaissent — même s’ils s’améliorent.",
       "Ne pas donner d’aspirine, d’anticoagulant ni aucun autre médicament.",
-      "Ne pas donner à manger ni à boire.",
+      "Ne rien donner à boire ni à manger (risque de troubles de la déglutition).",
       "Ne pas laisser la personne se rendre seule à l’hôpital en voiture."
     ],
     "timesTitle": "Heures importantes",
@@ -130,11 +131,11 @@
     "minutesAgo": "il y a {{count}} min",
     "tellTitle": "À dire aux secours",
     "tell": [
-      "Ce que vous avez observé (visage, bras, parole, équilibre, vision).",
-      "L’heure de début des symptômes ou de la dernière fois vue en bonne santé.",
-      "Les médicaments actuels, en particulier les anticoagulants.",
-      "Les maladies connues : AVC antérieur, diabète, troubles du rythme cardiaque.",
-      "Votre adresse exacte et comment accéder au logement."
+      "Où : adresse exacte, étage et accès.",
+      "Quoi : « Suspicion d’AVC ».",
+      "Quels symptômes : parole, visage, bras/jambe, vision, vertiges, mal de tête intense.",
+      "Depuis quand : heure de début des symptômes, ou dernière fois vue sans symptômes.",
+      "Qui appelle : votre nom et un numéro où vous rappeler. Médicaments actuels (surtout anticoagulants) si connus."
     ],
     "contactsTitle": "Contacts d’urgence",
     "noContacts": "Aucun contact d’urgence pour l’instant.",
@@ -148,7 +149,10 @@
     "availableOffline": "Disponible hors ligne",
     "triggerTitle": "Vous avez signalé un signe possible d’AVC",
     "triggerBody": "C’est une urgence médicale. Appelez maintenant — n’attendez pas que les symptômes disparaissent.",
-    "triggerDisappeared": "Des symptômes disparus nécessitent tout de même une évaluation médicale urgente. Ils peuvent être un signe d’alerte (AIT) d’un AVC."
+    "triggerDisappeared": "Des symptômes disparus nécessitent tout de même une évaluation médicale urgente. Ils peuvent être un signe d’alerte (AIT) d’un AVC.",
+    "dispatcherGuides": "Inutile de tout retenir : le régulateur vous guide pendant l’appel.",
+    "notForStrokeTitle": "Mauvais numéro pour un AVC",
+    "notForStroke": "Le {{number}} ({{label}}) n’est PAS pour une suspicion d’AVC. Appelez le {{primary}}."
   },
   "stroke": {
     "title": "Reconnaître un AVC",
@@ -170,7 +174,7 @@
       "E": {
         "word": "Yeux",
         "title": "Troubles de la vision soudains",
-        "description": "Perte soudaine de la vue d’un œil ou des deux, ou vision double.",
+        "description": "Perte soudaine de la vue d’un œil ou des deux, perte d’une partie du champ visuel ou vision double.",
         "check": "La personne voit-elle soudainement moins bien, double, ou perd-elle une partie de son champ visuel ?"
       },
       "F": {
@@ -182,8 +186,8 @@
       "A": {
         "word": "Bras",
         "title": "Faiblesse d’un bras",
-        "description": "Faiblesse, engourdissement soudain ou impossibilité de lever un bras.",
-        "check": "Demandez de lever les deux bras. Un bras retombe-t-il ou ne bouge-t-il pas ?"
+        "description": "Faiblesse, engourdissement ou paralysie soudaine d’un bras ou des deux bras.",
+        "check": "Demandez de lever les deux bras devant soi, paumes vers le haut. Un bras retombe-t-il ou ne bouge-t-il pas ?"
       },
       "S": {
         "word": "Parole",
@@ -206,9 +210,9 @@
     "noSignsNote": "L’absence de ces signes n’exclut PAS un AVC. D’autres signes soudains existent : mal de tête intense, confusion, engourdissement. Si vous êtes inquiet(ète), appelez.",
     "otherSignsTitle": "Autres signes soudains possibles",
     "otherSigns": [
-      "Mal de tête soudain et intense sans cause connue",
+      "Mal de tête soudain et intense sans cause connue, parfois avec nausées ou vomissements",
       "Confusion soudaine ou difficulté à comprendre",
-      "Engourdissement soudain du visage, d’un bras ou d’une jambe, surtout d’un seul côté"
+      "Engourdissement ou paralysie soudaine du visage, d’un bras ou d’une jambe, en général d’un seul côté du corps"
     ],
     "learnTypes": "Comprendre les types d’AVC et l’AIT"
   },
@@ -216,18 +220,18 @@
     "title": "Comprendre l’AVC",
     "intro": "Un AVC survient lorsque la circulation du sang vers une partie du cerveau est bloquée ou lorsqu’un vaisseau du cerveau se rompt. Des cellules cérébrales meurent en quelques minutes — un traitement rapide préserve le cerveau.",
     "ischemicTitle": "AVC ischémique",
-    "ischemicBody": "Le type le plus fréquent. Un caillot ou un rétrécissement bloque une artère irriguant le cerveau. Certains traitements doivent être administrés en quelques heures : c’est pourquoi il faut appeler immédiatement.",
+    "ischemicBody": "Le type le plus fréquent. Un caillot bouche une artère irriguant le cerveau. Les traitements hospitaliers comme la thrombolyse ou la thrombectomie doivent commencer dans les heures qui suivent le début des symptômes — c’est pourquoi il faut appeler immédiatement.",
     "hemorrhagicTitle": "AVC hémorragique",
     "hemorrhagicBody": "Un vaisseau sanguin dans le cerveau ou autour se rompt et saigne. L’hypertension artérielle est un facteur de risque important. C’est aussi une urgence médicale.",
     "tiaTitle": "Accident ischémique transitoire (AIT)",
-    "tiaBody": "Des symptômes d’AVC qui disparaissent, souvent en quelques minutes. Un AIT est un signal d’alarme : le risque d’AVC dans les jours suivants peut être élevé. Il nécessite une évaluation médicale urgente, même si vous vous sentez bien.",
+    "tiaBody": "Des symptômes d’AVC qui disparaissent d’eux-mêmes, généralement en quelques minutes, parfois après quelques heures. Un AIT est un signal d’alarme : le risque d’AVC ensuite est élevé. C’est une urgence — appelez même si vous vous sentez de nouveau bien.",
     "disappearedTitle": "Symptômes disparus ? Appelez quand même.",
     "disappearedBody": "Seule une équipe médicale peut distinguer un AIT d’un AVC. La disparition des symptômes ne signifie pas que le danger est écarté.",
     "whyTimeTitle": "Pourquoi le temps compte",
     "whyTimeBody": "Les hôpitaux peuvent proposer des traitements qui limitent les lésions cérébrales, mais beaucoup doivent être commencés rapidement. Connaître l’heure de début aide les médecins à choisir le traitement.",
     "afterTitle": "La vie après un AVC",
     "afterBody": "La récupération passe souvent par la rééducation (kinésithérapie, orthophonie, ergothérapie) et le traitement des facteurs de risque pour éviter une récidive. Les associations de patients peuvent aider les survivants et leurs familles.",
-    "reviewNotice": "Contenu éducatif — en attente de relecture par des professionnels de santé avant publication."
+    "reviewNotice": "Contenu éducatif vérifié avec l’OMS, le portail du ministère fédéral allemand de la Santé (gesund.bund.de) et la Fondation allemande contre l’AVC. Ne remplace pas un avis médical."
   },
   "prevention": {
     "title": "Prévention",
@@ -253,16 +257,46 @@
       "privacy": "Vos réponses restent sur cet appareil, sauf si vous activez la synchronisation dans les réglages de confidentialité."
     },
     "factors": {
-      "hypertension": { "question": "Vous a-t-on dit que vous avez de l’hypertension artérielle ?", "label": "Hypertension artérielle" },
-      "diabetes": { "question": "Vous a-t-on dit que vous avez du diabète ?", "label": "Diabète" },
-      "cholesterol": { "question": "Vous a-t-on dit que vous avez trop de cholestérol ?", "label": "Cholestérol élevé" },
-      "smoking": { "question": "Fumez-vous ou consommez-vous du tabac actuellement ?", "label": "Tabagisme" },
-      "alcohol": { "question": "Buvez-vous régulièrement plus d’alcool que les repères recommandés dans votre pays ?", "label": "Consommation d’alcool" },
-      "inactivity": { "question": "Êtes-vous physiquement actif(ve) moins de 150 minutes par semaine ?", "label": "Sédentarité" },
-      "overweight": { "question": "Vous a-t-on dit que vous êtes en surpoids ?", "label": "Surpoids" },
-      "atrialFibrillation": { "question": "Vous a-t-on dit que vous avez une fibrillation atriale (rythme cardiaque irrégulier) ?", "label": "Fibrillation atriale" },
-      "previousStroke": { "question": "Avez-vous déjà eu un AVC ou un AIT ?", "label": "AVC ou AIT antérieur" },
-      "familyHistory": { "question": "Un parent, un frère ou une sœur a-t-il eu un AVC ou un infarctus à un âge jeune ?", "label": "Antécédents familiaux" }
+      "hypertension": {
+        "question": "Vous a-t-on dit que vous avez de l’hypertension artérielle ?",
+        "label": "Hypertension artérielle"
+      },
+      "diabetes": {
+        "question": "Vous a-t-on dit que vous avez du diabète ?",
+        "label": "Diabète"
+      },
+      "cholesterol": {
+        "question": "Vous a-t-on dit que vous avez trop de cholestérol ?",
+        "label": "Cholestérol élevé"
+      },
+      "smoking": {
+        "question": "Fumez-vous ou consommez-vous du tabac actuellement ?",
+        "label": "Tabagisme"
+      },
+      "alcohol": {
+        "question": "Buvez-vous régulièrement plus d’alcool que les repères recommandés dans votre pays ?",
+        "label": "Consommation d’alcool"
+      },
+      "inactivity": {
+        "question": "Êtes-vous physiquement actif(ve) moins de 150 minutes par semaine ?",
+        "label": "Sédentarité"
+      },
+      "overweight": {
+        "question": "Vous a-t-on dit que vous êtes en surpoids ?",
+        "label": "Surpoids"
+      },
+      "atrialFibrillation": {
+        "question": "Vous a-t-on dit que vous avez une fibrillation atriale (rythme cardiaque irrégulier) ?",
+        "label": "Fibrillation atriale"
+      },
+      "previousStroke": {
+        "question": "Avez-vous déjà eu un AVC ou un AIT ?",
+        "label": "AVC ou AIT antérieur"
+      },
+      "familyHistory": {
+        "question": "Un parent, un frère ou une sœur a-t-il eu un AVC ou un infarctus à un âge jeune ?",
+        "label": "Antécédents familiaux"
+      }
     },
     "discuss": {
       "hypertension": "Le contrôle de la tension et la fréquence des mesures.",
@@ -277,15 +311,42 @@
       "familyHistory": "L’intérêt d’un dépistage plus précoce dans votre cas."
     },
     "recommendations": {
-      "nutrition": { "title": "Alimentation saine", "body": "Mangez beaucoup de légumes, de fruits, de céréales complètes et de légumineuses. Limitez le sel, la charcuterie et les boissons sucrées." },
-      "activity": { "title": "Activité physique", "body": "Visez au moins 150 minutes d’activité modérée par semaine, comme la marche rapide, si votre médecin est d’accord." },
-      "bloodPressure": { "title": "Surveillance de la tension", "body": "L’hypertension ne donne souvent aucun symptôme. Faites-la contrôler régulièrement et suivez les conseils de votre médecin pour l’automesure." },
-      "smoking": { "title": "Arrêter de fumer", "body": "Arrêter de fumer réduit le risque d’AVC. Demandez de l’aide à un professionnel de santé ou à un service national d’aide à l’arrêt." },
-      "alcohol": { "title": "Réduire l’alcool", "body": "Boire moins d’alcool fait baisser la tension et le risque d’AVC. Suivez les repères de votre pays." },
-      "sleep": { "title": "Sommeil", "body": "Un sommeil régulier et suffisant favorise la santé cardiovasculaire. Un ronflement fort avec des pauses respiratoires doit être signalé à un médecin." },
-      "diabetes": { "title": "Gestion du diabète", "body": "Respectez vos rendez-vous et le plan de prise en charge convenu avec votre équipe soignante." },
-      "followUp": { "title": "Suivi médical", "body": "Des bilans réguliers permettent de détecter tôt des facteurs de risque comme l’hypertension ou la fibrillation atriale." },
-      "adherence": { "title": "Traitements prescrits", "body": "Si vous avez un traitement prescrit, prenez-le comme convenu avec votre médecin. Parlez-lui avant de changer quoi que ce soit." }
+      "nutrition": {
+        "title": "Alimentation saine",
+        "body": "L’OMS recommande une alimentation équilibrée avec au moins cinq portions de fruits et légumes par jour, et moins de sel, de graisses saturées et de sucres."
+      },
+      "activity": {
+        "title": "Activité physique",
+        "body": "L’OMS recommande au moins 150 minutes d’activité physique d’intensité modérée par semaine, comme la marche rapide. Demandez à votre médecin ce qui est adapté pour vous."
+      },
+      "bloodPressure": {
+        "title": "Surveillance de la tension",
+        "body": "L’hypertension ne donne souvent aucun symptôme. Faites-la contrôler régulièrement et suivez les conseils de votre médecin pour l’automesure."
+      },
+      "smoking": {
+        "title": "Arrêter de fumer",
+        "body": "Arrêter le tabac et éviter le tabagisme passif réduit le risque d’AVC. Demandez de l’aide à un professionnel de santé ou à un service national d’aide à l’arrêt."
+      },
+      "alcohol": {
+        "title": "Réduire l’alcool",
+        "body": "Limiter l’alcool fait baisser la tension et le risque d’AVC. Suivez les repères de votre pays."
+      },
+      "sleep": {
+        "title": "Sommeil",
+        "body": "Un sommeil régulier et suffisant favorise la santé cardiovasculaire. Un ronflement fort avec des pauses respiratoires doit être signalé à un médecin."
+      },
+      "diabetes": {
+        "title": "Gestion du diabète",
+        "body": "Respectez vos rendez-vous et le plan de prise en charge convenu avec votre équipe soignante."
+      },
+      "followUp": {
+        "title": "Suivi médical",
+        "body": "Des bilans réguliers permettent de détecter tôt des facteurs de risque comme l’hypertension ou la fibrillation atriale."
+      },
+      "adherence": {
+        "title": "Traitements prescrits",
+        "body": "Si vous avez un traitement prescrit, prenez-le comme convenu avec votre médecin. Parlez-lui avant de changer quoi que ce soit."
+      }
     }
   },
   "tracker": {
@@ -368,17 +429,50 @@
     "you": "Vous",
     "assistantLabel": "Assistant",
     "kb": {
-      "symptoms": { "q": "Quels sont les signes d’alerte de l’AVC ?", "a": "Retenez BE-FAST : perte soudaine d’équilibre (Balance), troubles soudains de la vision (Eyes), visage paralysé (Face), faiblesse d’un bras (Arms), trouble de la parole (Speech) — et il est temps (Time) d’appeler immédiatement les secours. D’autres signes soudains existent : mal de tête intense, confusion ou engourdissement d’un côté." },
-      "tia": { "q": "Qu’est-ce qu’un AIT (mini-AVC) ?", "a": "Un accident ischémique transitoire provoque des symptômes d’AVC qui disparaissent, souvent en quelques minutes. C’est un signal d’alarme : un AVC peut suivre. Il nécessite une évaluation en urgence, même si les symptômes ont disparu." },
-      "types": { "q": "Quels sont les types d’AVC ?", "a": "Les AVC ischémiques sont dus à une artère bouchée et sont les plus fréquents. Les AVC hémorragiques sont dus à un saignement dans le cerveau ou autour. Les deux sont des urgences." },
-      "bloodPressure": { "q": "Pourquoi la tension artérielle est-elle importante ?", "a": "L’hypertension est l’un des principaux facteurs de risque modifiables de l’AVC. Elle ne donne souvent aucun symptôme : des contrôles réguliers sont donc importants. Votre médecin peut vous indiquer les objectifs qui vous concernent." },
-      "atrialFibrillation": { "q": "Qu’est-ce que la fibrillation atriale ?", "a": "La fibrillation atriale est un rythme cardiaque irrégulier. Elle peut favoriser la formation de caillots dans le cœur, qui peuvent migrer vers le cerveau. Les personnes concernées doivent parler de la prévention de l’AVC avec leur médecin." },
-      "prevention": { "q": "Comment réduire mon risque d’AVC ?", "a": "Contrôlez votre tension, ne fumez pas, soyez actif(ve), mangez équilibré et peu salé, limitez l’alcool, prenez en charge le diabète et le cholestérol, et faites des bilans réguliers." },
-      "recovery": { "q": "Que se passe-t-il après un AVC ?", "a": "La récupération comprend souvent de la rééducation : kinésithérapie, orthophonie et ergothérapie. Traiter les facteurs de risque aide à éviter une récidive. Les progrès peuvent se poursuivre pendant des mois." },
-      "doctorQuestions": { "q": "Que demander à mon médecin ?", "a": "Vous pouvez demander : Quels sont mes facteurs de risque ? Quelle tension dois-je viser ? À quelle fréquence dois-je être contrôlé(e) ? Ai-je besoin d’examens du rythme cardiaque ou du cholestérol ? Quels signes doivent me faire appeler les secours ?" },
-      "terms": { "q": "Que signifient neurologue et thrombolyse ?", "a": "Un neurologue est un médecin spécialiste du cerveau et des nerfs. La thrombolyse est un traitement hospitalier qui peut dissoudre certains caillots lors d’un AVC ischémique. Seuls les médecins peuvent décider s’il convient, et il doit être administré rapidement." },
-      "wait": { "q": "Puis-je attendre de voir si les symptômes passent ?", "a": "Non. N’attendez jamais. Des symptômes possibles d’AVC sont une urgence médicale, même s’ils s’améliorent ou disparaissent. Appelez immédiatement les secours." }
-    }
+      "symptoms": {
+        "q": "Quels sont les signes d’alerte de l’AVC ?",
+        "a": "L’OMS cite ces signes d’alerte soudains (BE-FAST) : Équilibre – vertiges ou perte d’équilibre soudains ; Yeux – perte soudaine de la vue ; Visage – visage qui s’affaisse ; Bras – faiblesse d’un bras ou des deux ; Parole – parole confuse ou étrange ; Temps – appelez immédiatement les secours. Un mal de tête soudain et intense peut aussi être un signe."
+      },
+      "tia": {
+        "q": "Qu’est-ce qu’un AIT (mini-AVC) ?",
+        "a": "Un accident ischémique transitoire provoque des symptômes d’AVC qui disparaissent, généralement en quelques minutes. C’est un signal d’alarme : un AVC peut suivre. C’est une urgence : appelez les secours même si les symptômes ont disparu."
+      },
+      "types": {
+        "q": "Quels sont les types d’AVC ?",
+        "a": "Les AVC ischémiques sont dus à une artère bouchée et sont les plus fréquents. Les AVC hémorragiques sont dus à un saignement dans le cerveau ou autour. Les deux sont des urgences."
+      },
+      "bloodPressure": {
+        "q": "Pourquoi la tension artérielle est-elle importante ?",
+        "a": "L’hypertension est l’un des principaux facteurs de risque modifiables de l’AVC. Elle ne donne souvent aucun symptôme : des contrôles réguliers sont donc importants. Votre médecin peut vous indiquer les objectifs qui vous concernent."
+      },
+      "atrialFibrillation": {
+        "q": "Qu’est-ce que la fibrillation atriale ?",
+        "a": "La fibrillation atriale est un rythme cardiaque irrégulier. Elle peut favoriser la formation de caillots dans le cœur, qui peuvent migrer vers le cerveau. Les personnes concernées doivent parler de la prévention de l’AVC avec leur médecin."
+      },
+      "prevention": {
+        "q": "Comment réduire mon risque d’AVC ?",
+        "a": "Selon l’OMS, vous pouvez réduire votre risque en contrôlant l’hypertension, en ne consommant pas de tabac, en mangeant équilibré avec au moins cinq portions de fruits et légumes et moins de sel, en bougeant au moins 150 minutes par semaine, en limitant l’alcool, et en prenant en charge le diabète, le cholestérol et la fibrillation atriale avec votre médecin."
+      },
+      "recovery": {
+        "q": "Que se passe-t-il après un AVC ?",
+        "a": "La récupération comprend souvent de la rééducation : kinésithérapie, orthophonie et ergothérapie. Traiter les facteurs de risque aide à éviter une récidive. Les progrès peuvent se poursuivre pendant des mois."
+      },
+      "doctorQuestions": {
+        "q": "Que demander à mon médecin ?",
+        "a": "Vous pouvez demander : Quels sont mes facteurs de risque ? Quelle tension dois-je viser ? À quelle fréquence dois-je être contrôlé(e) ? Ai-je besoin d’examens du rythme cardiaque ou du cholestérol ? Quels signes doivent me faire appeler les secours ?"
+      },
+      "terms": {
+        "q": "Que signifient neurologue et thrombolyse ?",
+        "a": "Un neurologue est un médecin spécialiste du cerveau et des nerfs. La thrombolyse est un traitement hospitalier qui peut dissoudre certains caillots lors d’un AVC ischémique. Seuls les médecins peuvent décider s’il convient, et il doit être administré rapidement."
+      },
+      "wait": {
+        "q": "Puis-je attendre de voir si les symptômes passent ?",
+        "a": "Non. N’attendez jamais. Des symptômes possibles d’AVC sont une urgence médicale, même s’ils s’améliorent ou disparaissent. Appelez immédiatement les secours."
+      }
+    },
+    "enableAiTitle": "Obtenir des réponses IA",
+    "enableAiBody": "Avec votre accord, votre question (sans aucune donnée de santé) est envoyée à l’IA en ligne, qui répond uniquement à partir de la base de connaissances relue de l’application. Vous pouvez désactiver cela à tout moment dans Confidentialité.",
+    "enableAiButton": "Activer les réponses IA"
   },
   "family": {
     "title": "Sécurité de la famille",
@@ -514,7 +608,8 @@
     "review": "Les contenus médicaux et d’urgence de cette version sont en attente de relecture par des professionnels de santé qualifiés. Les numéros d’urgence doivent être vérifiés pour chaque pays avant publication.",
     "sourcesTitle": "Sources de référence",
     "freeTitle": "Gratuit pour toujours",
-    "free": "Sans publicité, sans abonnement, sans vente de données."
+    "free": "Sans publicité, sans abonnement, sans vente de données.",
+    "sourcesChecked": "Contenus vérifiés avec ces sources le {{date}}."
   },
   "onboarding": {
     "slide1Title": "Reconnaître",

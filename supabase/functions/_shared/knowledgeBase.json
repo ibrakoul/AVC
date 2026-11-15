@@ -4,50 +4,50 @@
     {
       "id": "symptoms",
       "sourceIds": [
-        "asa",
-        "nhs"
+        "who",
+        "dsh"
       ],
       "content": {
         "en": {
           "q": "What are the warning signs of stroke?",
-          "a": "Use BE-FAST: sudden loss of Balance, sudden vision problems (Eyes), Face drooping, Arm weakness, Speech difficulty — and Time to call emergency services immediately. Other sudden signs include severe headache, confusion or numbness on one side."
+          "a": "WHO lists these sudden warning signs (BE-FAST): Balance – sudden dizziness or loss of balance; Eyes – sudden vision loss; Face – facial droop; Arms – weakness in one or both arms; Speech – slurred or strange speech; Time – call emergency services immediately. A sudden severe headache can also be a sign."
         },
         "fr": {
           "q": "Quels sont les signes d’alerte de l’AVC ?",
-          "a": "Retenez BE-FAST : perte soudaine d’équilibre (Balance), troubles soudains de la vision (Eyes), visage paralysé (Face), faiblesse d’un bras (Arms), trouble de la parole (Speech) — et il est temps (Time) d’appeler immédiatement les secours. D’autres signes soudains existent : mal de tête intense, confusion ou engourdissement d’un côté."
+          "a": "L’OMS cite ces signes d’alerte soudains (BE-FAST) : Équilibre – vertiges ou perte d’équilibre soudains ; Yeux – perte soudaine de la vue ; Visage – visage qui s’affaisse ; Bras – faiblesse d’un bras ou des deux ; Parole – parole confuse ou étrange ; Temps – appelez immédiatement les secours. Un mal de tête soudain et intense peut aussi être un signe."
         },
         "de": {
           "q": "Was sind die Warnzeichen eines Schlaganfalls?",
-          "a": "Merken Sie sich BE-FAST: plötzlicher Gleichgewichtsverlust (Balance), plötzliche Sehstörungen (Eyes), hängendes Gesicht (Face), Armschwäche (Arms), Sprachstörung (Speech) — und Zeit (Time), sofort den Notruf zu wählen. Weitere plötzliche Zeichen sind starke Kopfschmerzen, Verwirrtheit oder einseitige Taubheit."
+          "a": "Die WHO nennt diese plötzlichen Warnzeichen (BE-FAST): Gleichgewicht – plötzlicher Schwindel oder Gleichgewichtsverlust; Augen – plötzlicher Sehverlust; Gesicht – hängende Gesichtshälfte; Arme – Schwäche in einem oder beiden Armen; Sprache – verwaschene oder seltsame Sprache; Zeit – sofort den Notruf wählen. Auch plötzliche, sehr starke Kopfschmerzen können ein Zeichen sein."
         }
       }
     },
     {
       "id": "tia",
       "sourceIds": [
-        "nhs",
-        "asa"
+        "who",
+        "gesund"
       ],
       "content": {
         "en": {
           "q": "What is a TIA (mini-stroke)?",
-          "a": "A transient ischemic attack causes stroke-like symptoms that go away, often within minutes. It is a warning sign that a stroke may follow. It needs emergency assessment even if the symptoms have gone."
+          "a": "A transient ischaemic attack causes stroke-like symptoms that go away, usually within minutes. It is a warning sign that a stroke may follow and is an emergency: call emergency services even if the symptoms have gone."
         },
         "fr": {
           "q": "Qu’est-ce qu’un AIT (mini-AVC) ?",
-          "a": "Un accident ischémique transitoire provoque des symptômes d’AVC qui disparaissent, souvent en quelques minutes. C’est un signal d’alarme : un AVC peut suivre. Il nécessite une évaluation en urgence, même si les symptômes ont disparu."
+          "a": "Un accident ischémique transitoire provoque des symptômes d’AVC qui disparaissent, généralement en quelques minutes. C’est un signal d’alarme : un AVC peut suivre. C’est une urgence : appelez les secours même si les symptômes ont disparu."
         },
         "de": {
           "q": "Was ist eine TIA (Mini-Schlaganfall)?",
-          "a": "Eine transitorische ischämische Attacke verursacht Schlaganfall-ähnliche Symptome, die wieder verschwinden, oft nach Minuten. Sie ist ein Warnzeichen, dass ein Schlaganfall folgen kann, und muss notfallmäßig abgeklärt werden — auch wenn die Symptome weg sind."
+          "a": "Eine transitorische ischämische Attacke verursacht Schlaganfall-ähnliche Symptome, die wieder verschwinden, meist nach Minuten. Sie ist ein Warnzeichen, dass ein Schlaganfall folgen kann, und ein Notfall: Rufen Sie den Notruf, auch wenn die Symptome weg sind."
         }
       }
     },
     {
       "id": "types",
       "sourceIds": [
-        "nhs",
-        "eso"
+        "who",
+        "gesund"
       ],
       "content": {
         "en": {
@@ -68,7 +68,7 @@
       "id": "bloodPressure",
       "sourceIds": [
         "who",
-        "nhs"
+        "whoHypertension"
       ],
       "content": {
         "en": {
@@ -88,8 +88,8 @@
     {
       "id": "atrialFibrillation",
       "sourceIds": [
-        "nhs",
-        "eso"
+        "who",
+        "gesund"
       ],
       "content": {
         "en": {
@@ -109,29 +109,28 @@
     {
       "id": "prevention",
       "sourceIds": [
-        "who",
-        "nhs"
+        "who"
       ],
       "content": {
         "en": {
           "q": "How can I lower my stroke risk?",
-          "a": "Keep blood pressure under control, don't smoke, be physically active, eat a balanced diet low in salt, limit alcohol, manage diabetes and cholesterol, and attend regular check-ups."
+          "a": "According to WHO, you can lower your risk by controlling high blood pressure, not using tobacco, eating a balanced diet with at least five servings of fruit and vegetables and less salt, being active at least 150 minutes a week, limiting alcohol, and managing diabetes, cholesterol and atrial fibrillation with your doctor."
         },
         "fr": {
           "q": "Comment réduire mon risque d’AVC ?",
-          "a": "Contrôlez votre tension, ne fumez pas, soyez actif(ve), mangez équilibré et peu salé, limitez l’alcool, prenez en charge le diabète et le cholestérol, et faites des bilans réguliers."
+          "a": "Selon l’OMS, vous pouvez réduire votre risque en contrôlant l’hypertension, en ne consommant pas de tabac, en mangeant équilibré avec au moins cinq portions de fruits et légumes et moins de sel, en bougeant au moins 150 minutes par semaine, en limitant l’alcool, et en prenant en charge le diabète, le cholestérol et la fibrillation atriale avec votre médecin."
         },
         "de": {
           "q": "Wie kann ich mein Schlaganfallrisiko senken?",
-          "a": "Halten Sie den Blutdruck im Griff, rauchen Sie nicht, bewegen Sie sich, essen Sie ausgewogen und salzarm, trinken Sie wenig Alkohol, behandeln Sie Diabetes und Cholesterin und gehen Sie regelmäßig zu Kontrollen."
+          "a": "Laut WHO senken Sie Ihr Risiko, wenn Sie Bluthochdruck behandeln lassen, keinen Tabak konsumieren, ausgewogen mit mindestens fünf Portionen Obst und Gemüse und weniger Salz essen, sich mindestens 150 Minuten pro Woche bewegen, wenig Alkohol trinken und Diabetes, Cholesterin und Vorhofflimmern gemeinsam mit Ihrer Ärztin/Ihrem Arzt behandeln."
         }
       }
     },
     {
       "id": "recovery",
       "sourceIds": [
-        "nhs",
-        "dsg"
+        "who",
+        "gesund"
       ],
       "content": {
         "en": {
@@ -151,7 +150,7 @@
     {
       "id": "doctorQuestions",
       "sourceIds": [
-        "nhs"
+        "gesund"
       ],
       "content": {
         "en": {
@@ -171,8 +170,8 @@
     {
       "id": "terms",
       "sourceIds": [
-        "eso",
-        "nhs"
+        "who",
+        "gesund"
       ],
       "content": {
         "en": {
@@ -192,8 +191,8 @@
     {
       "id": "wait",
       "sourceIds": [
-        "nhs",
-        "asa"
+        "dsh",
+        "gesund"
       ],
       "content": {
         "en": {

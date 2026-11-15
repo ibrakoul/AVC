@@ -1,5 +1,4 @@
 import { goBackOr } from '@/utils/navigation';
-import { router } from 'expo-router';
 import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 

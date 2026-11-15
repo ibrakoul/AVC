@@ -70,6 +70,16 @@ export default function EmergencyScreen() {
         </Card>
       )}
 
+      {config?.notForStroke?.map((n) => (
+        <Banner
+          key={n.number}
+          testID={`not-for-stroke-${n.number}`}
+          tone="warning"
+          title={t('emergency.notForStrokeTitle')}
+          text={t('emergency.notForStroke', { number: n.number, label: t(n.labelKey as 'emergency.numbers.onCallDoctor'), primary: config.primary.number })}
+        />
+      ))}
+
       <ListItem
         testID="emergency-country-row"
         icon="Globe"
@@ -119,6 +129,9 @@ export default function EmergencyScreen() {
       <Card>
         <SectionTitle>{t('emergency.tellTitle')}</SectionTitle>
         <BulletList items={tell} />
+        <AppText variant="small" tone="muted">
+          {t('emergency.dispatcherGuides')}
+        </AppText>
         {times.onsetAt || times.lastKnownWellAt ? (
           <View style={styles.times}>
             {times.onsetAt ? <AppText variant="bodyStrong">{`${t('emergency.onsetTitle')}: ${formatTime(times.onsetAt, i18n.language)}`}</AppText> : null}

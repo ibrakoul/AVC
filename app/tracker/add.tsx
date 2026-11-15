@@ -1,5 +1,4 @@
 import { goBackOr } from '@/utils/navigation';
-import { router } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 import { useTranslation } from 'react-i18next';

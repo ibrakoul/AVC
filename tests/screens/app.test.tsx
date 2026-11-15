@@ -75,8 +75,8 @@ describe('user without an account / offline', () => {
   it('assistant answers a suggested question with sources', async () => {
     await renderApp('/assistant');
     await fireEvent.press(await screen.findByTestId('suggestion-tia'));
-    expect(await screen.findByText(/A transient ischemic attack causes stroke-like symptoms/)).toBeTruthy();
-    expect(screen.getByText('NHS — Stroke')).toBeTruthy();
+    expect(await screen.findByText(/A transient ischaemic attack causes stroke-like symptoms/)).toBeTruthy();
+    expect(screen.getByText('World Health Organization — Stroke fact sheet (19 Dec 2025)')).toBeTruthy();
   });
 });
 
@@ -113,5 +113,13 @@ describe('prevention', () => {
     await renderApp('/prevention');
     expect(await screen.findByTestId('discuss-topics')).toHaveTextContent(/High blood pressure/);
     expect(screen.queryByText(/score:/i)).toBeNull();
+  });
+});
+
+describe('assistant consent (AI at launch)', () => {
+  it('without backend credentials, no AI consent card is shown and FAQ mode is used', async () => {
+    await renderApp('/assistant');
+    expect(await screen.findByTestId('assistant-mode')).toHaveTextContent(/Offline FAQ mode/);
+    expect(screen.queryByTestId('assistant-consent')).toBeNull();
   });
 });

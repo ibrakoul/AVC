@@ -8,10 +8,11 @@ import { Logo } from '@/components/common/Logo';
 import { Screen } from '@/components/common/Screen';
 import { SectionTitle } from '@/components/common/SectionTitle';
 import { config } from '@/constants/config';
-import { SOURCES } from '@/constants/sources';
+import { SOURCES, SOURCES_CHECKED_AT } from '@/constants/sources';
+import { formatDate } from '@/utils/date';
 
 export default function AboutScreen() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <Screen testID="about-screen">
       <Logo size={64} />
@@ -39,6 +40,9 @@ export default function AboutScreen() {
         <AppText>{t('about.free')}</AppText>
       </Card>
       <SectionTitle>{t('about.sourcesTitle')}</SectionTitle>
+      <AppText variant="small" tone="muted">
+        {t('about.sourcesChecked', { date: formatDate(SOURCES_CHECKED_AT, i18n.language) })}
+      </AppText>
       {Object.values(SOURCES).map((s) => (
         <ListItem key={s.id} icon="Globe" title={s.title} subtitle={s.url} onPress={() => void Linking.openURL(s.url).catch(() => undefined)} />
       ))}

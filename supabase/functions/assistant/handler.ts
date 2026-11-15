@@ -65,7 +65,7 @@ export function systemPrompt(language: Lang): string {
 
 export async function handleAssistant(req: AssistantRequest, client: Pick<Anthropic, 'beta'>, model: string): Promise<AssistantResponse> {
   if (detectEmergencyLanguage(req.question)) {
-    return { answer: kb.emergencyText[req.language], sourceIds: ['nhs', 'asa'], emergency: true };
+    return { answer: kb.emergencyText[req.language], sourceIds: ['dsh', 'gesund'], emergency: true };
   }
   if (detectMedicationRequest(req.question)) {
     return { answer: kb.medicationRefusal[req.language], sourceIds: [], emergency: false };
