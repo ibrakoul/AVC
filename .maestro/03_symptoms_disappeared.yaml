@@ -1,0 +1,10 @@
+# Symptoms that disappeared (possible TIA) still lead to emergency instructions.
+appId: org.strokeguard.app
+---
+- launchApp
+- tapOn: "Stroke test"
+- scrollUntilVisible:
+    element: { id: "signs-disappeared" }
+- tapOn: { id: "signs-disappeared" }
+- assertVisible: { id: "emergency-trigger-banner" }
+- assertVisible: ".*TIA.*"

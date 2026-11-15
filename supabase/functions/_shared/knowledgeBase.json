@@ -1,0 +1,224 @@
+{
+  "generatedFrom": "locales/*/translation.json",
+  "entries": [
+    {
+      "id": "symptoms",
+      "sourceIds": [
+        "asa",
+        "nhs"
+      ],
+      "content": {
+        "en": {
+          "q": "What are the warning signs of stroke?",
+          "a": "Use BE-FAST: sudden loss of Balance, sudden vision problems (Eyes), Face drooping, Arm weakness, Speech difficulty — and Time to call emergency services immediately. Other sudden signs include severe headache, confusion or numbness on one side."
+        },
+        "fr": {
+          "q": "Quels sont les signes d’alerte de l’AVC ?",
+          "a": "Retenez BE-FAST : perte soudaine d’équilibre (Balance), troubles soudains de la vision (Eyes), visage paralysé (Face), faiblesse d’un bras (Arms), trouble de la parole (Speech) — et il est temps (Time) d’appeler immédiatement les secours. D’autres signes soudains existent : mal de tête intense, confusion ou engourdissement d’un côté."
+        },
+        "de": {
+          "q": "Was sind die Warnzeichen eines Schlaganfalls?",
+          "a": "Merken Sie sich BE-FAST: plötzlicher Gleichgewichtsverlust (Balance), plötzliche Sehstörungen (Eyes), hängendes Gesicht (Face), Armschwäche (Arms), Sprachstörung (Speech) — und Zeit (Time), sofort den Notruf zu wählen. Weitere plötzliche Zeichen sind starke Kopfschmerzen, Verwirrtheit oder einseitige Taubheit."
+        }
+      }
+    },
+    {
+      "id": "tia",
+      "sourceIds": [
+        "nhs",
+        "asa"
+      ],
+      "content": {
+        "en": {
+          "q": "What is a TIA (mini-stroke)?",
+          "a": "A transient ischemic attack causes stroke-like symptoms that go away, often within minutes. It is a warning sign that a stroke may follow. It needs emergency assessment even if the symptoms have gone."
+        },
+        "fr": {
+          "q": "Qu’est-ce qu’un AIT (mini-AVC) ?",
+          "a": "Un accident ischémique transitoire provoque des symptômes d’AVC qui disparaissent, souvent en quelques minutes. C’est un signal d’alarme : un AVC peut suivre. Il nécessite une évaluation en urgence, même si les symptômes ont disparu."
+        },
+        "de": {
+          "q": "Was ist eine TIA (Mini-Schlaganfall)?",
+          "a": "Eine transitorische ischämische Attacke verursacht Schlaganfall-ähnliche Symptome, die wieder verschwinden, oft nach Minuten. Sie ist ein Warnzeichen, dass ein Schlaganfall folgen kann, und muss notfallmäßig abgeklärt werden — auch wenn die Symptome weg sind."
+        }
+      }
+    },
+    {
+      "id": "types",
+      "sourceIds": [
+        "nhs",
+        "eso"
+      ],
+      "content": {
+        "en": {
+          "q": "What types of stroke exist?",
+          "a": "Ischemic strokes are caused by a blocked artery and are the most common. Hemorrhagic strokes are caused by bleeding in or around the brain. Both are emergencies."
+        },
+        "fr": {
+          "q": "Quels sont les types d’AVC ?",
+          "a": "Les AVC ischémiques sont dus à une artère bouchée et sont les plus fréquents. Les AVC hémorragiques sont dus à un saignement dans le cerveau ou autour. Les deux sont des urgences."
+        },
+        "de": {
+          "q": "Welche Arten von Schlaganfall gibt es?",
+          "a": "Ischämische Schlaganfälle entstehen durch eine verschlossene Arterie und sind am häufigsten. Hämorrhagische Schlaganfälle entstehen durch eine Blutung im oder am Gehirn. Beides sind Notfälle."
+        }
+      }
+    },
+    {
+      "id": "bloodPressure",
+      "sourceIds": [
+        "who",
+        "nhs"
+      ],
+      "content": {
+        "en": {
+          "q": "Why does blood pressure matter?",
+          "a": "High blood pressure is one of the most important modifiable risk factors for stroke. It often causes no symptoms, so regular checks are important. Your doctor can tell you what targets apply to you."
+        },
+        "fr": {
+          "q": "Pourquoi la tension artérielle est-elle importante ?",
+          "a": "L’hypertension est l’un des principaux facteurs de risque modifiables de l’AVC. Elle ne donne souvent aucun symptôme : des contrôles réguliers sont donc importants. Votre médecin peut vous indiquer les objectifs qui vous concernent."
+        },
+        "de": {
+          "q": "Warum ist der Blutdruck wichtig?",
+          "a": "Bluthochdruck ist einer der wichtigsten beeinflussbaren Risikofaktoren für einen Schlaganfall. Er verursacht oft keine Beschwerden, daher sind regelmäßige Kontrollen wichtig. Ihre Ärztin/Ihr Arzt nennt Ihnen Ihre Zielwerte."
+        }
+      }
+    },
+    {
+      "id": "atrialFibrillation",
+      "sourceIds": [
+        "nhs",
+        "eso"
+      ],
+      "content": {
+        "en": {
+          "q": "What is atrial fibrillation?",
+          "a": "Atrial fibrillation is an irregular heart rhythm. It can allow clots to form in the heart, which may travel to the brain. People with atrial fibrillation should discuss stroke prevention with their doctor."
+        },
+        "fr": {
+          "q": "Qu’est-ce que la fibrillation atriale ?",
+          "a": "La fibrillation atriale est un rythme cardiaque irrégulier. Elle peut favoriser la formation de caillots dans le cœur, qui peuvent migrer vers le cerveau. Les personnes concernées doivent parler de la prévention de l’AVC avec leur médecin."
+        },
+        "de": {
+          "q": "Was ist Vorhofflimmern?",
+          "a": "Vorhofflimmern ist ein unregelmäßiger Herzrhythmus. Dabei können sich Gerinnsel im Herzen bilden, die ins Gehirn gelangen können. Betroffene sollten die Schlaganfallvorbeugung mit ihrer Ärztin/ihrem Arzt besprechen."
+        }
+      }
+    },
+    {
+      "id": "prevention",
+      "sourceIds": [
+        "who",
+        "nhs"
+      ],
+      "content": {
+        "en": {
+          "q": "How can I lower my stroke risk?",
+          "a": "Keep blood pressure under control, don't smoke, be physically active, eat a balanced diet low in salt, limit alcohol, manage diabetes and cholesterol, and attend regular check-ups."
+        },
+        "fr": {
+          "q": "Comment réduire mon risque d’AVC ?",
+          "a": "Contrôlez votre tension, ne fumez pas, soyez actif(ve), mangez équilibré et peu salé, limitez l’alcool, prenez en charge le diabète et le cholestérol, et faites des bilans réguliers."
+        },
+        "de": {
+          "q": "Wie kann ich mein Schlaganfallrisiko senken?",
+          "a": "Halten Sie den Blutdruck im Griff, rauchen Sie nicht, bewegen Sie sich, essen Sie ausgewogen und salzarm, trinken Sie wenig Alkohol, behandeln Sie Diabetes und Cholesterin und gehen Sie regelmäßig zu Kontrollen."
+        }
+      }
+    },
+    {
+      "id": "recovery",
+      "sourceIds": [
+        "nhs",
+        "dsg"
+      ],
+      "content": {
+        "en": {
+          "q": "What happens after a stroke?",
+          "a": "Recovery often includes rehabilitation such as physiotherapy, speech therapy and occupational therapy. Treating risk factors helps prevent another stroke. Progress can continue for months."
+        },
+        "fr": {
+          "q": "Que se passe-t-il après un AVC ?",
+          "a": "La récupération comprend souvent de la rééducation : kinésithérapie, orthophonie et ergothérapie. Traiter les facteurs de risque aide à éviter une récidive. Les progrès peuvent se poursuivre pendant des mois."
+        },
+        "de": {
+          "q": "Was passiert nach einem Schlaganfall?",
+          "a": "Zur Genesung gehören oft Rehabilitation wie Physiotherapie, Logopädie und Ergotherapie. Die Behandlung der Risikofaktoren hilft, einem weiteren Schlaganfall vorzubeugen. Fortschritte sind oft noch über Monate möglich."
+        }
+      }
+    },
+    {
+      "id": "doctorQuestions",
+      "sourceIds": [
+        "nhs"
+      ],
+      "content": {
+        "en": {
+          "q": "What should I ask my doctor?",
+          "a": "You could ask: What are my personal risk factors? What blood pressure should I aim for? How often should I be checked? Do I need tests for heart rhythm or cholesterol? What signs mean I should call emergency services?"
+        },
+        "fr": {
+          "q": "Que demander à mon médecin ?",
+          "a": "Vous pouvez demander : Quels sont mes facteurs de risque ? Quelle tension dois-je viser ? À quelle fréquence dois-je être contrôlé(e) ? Ai-je besoin d’examens du rythme cardiaque ou du cholestérol ? Quels signes doivent me faire appeler les secours ?"
+        },
+        "de": {
+          "q": "Was sollte ich meine Ärztin/meinen Arzt fragen?",
+          "a": "Zum Beispiel: Welche persönlichen Risikofaktoren habe ich? Welchen Blutdruck sollte ich anstreben? Wie oft sollte ich mich untersuchen lassen? Brauche ich Untersuchungen von Herzrhythmus oder Cholesterin? Bei welchen Zeichen muss ich den Notruf wählen?"
+        }
+      }
+    },
+    {
+      "id": "terms",
+      "sourceIds": [
+        "eso",
+        "nhs"
+      ],
+      "content": {
+        "en": {
+          "q": "What do neurologist and thrombolysis mean?",
+          "a": "A neurologist is a doctor specialised in the brain and nerves. Thrombolysis is a hospital treatment that can dissolve some clots in ischemic stroke. Only doctors can decide whether it is suitable, and it must be given quickly."
+        },
+        "fr": {
+          "q": "Que signifient neurologue et thrombolyse ?",
+          "a": "Un neurologue est un médecin spécialiste du cerveau et des nerfs. La thrombolyse est un traitement hospitalier qui peut dissoudre certains caillots lors d’un AVC ischémique. Seuls les médecins peuvent décider s’il convient, et il doit être administré rapidement."
+        },
+        "de": {
+          "q": "Was bedeuten Neurologe und Thrombolyse?",
+          "a": "Eine Neurologin/ein Neurologe ist auf Gehirn und Nerven spezialisiert. Die Thrombolyse ist eine Klinikbehandlung, die bei ischämischem Schlaganfall manche Gerinnsel auflösen kann. Nur Ärztinnen und Ärzte entscheiden, ob sie geeignet ist — und sie muss schnell erfolgen."
+        }
+      }
+    },
+    {
+      "id": "wait",
+      "sourceIds": [
+        "nhs",
+        "asa"
+      ],
+      "content": {
+        "en": {
+          "q": "Can I wait to see if symptoms pass?",
+          "a": "No. Never wait. Possible stroke symptoms are a medical emergency, even if they improve or disappear. Call emergency services immediately."
+        },
+        "fr": {
+          "q": "Puis-je attendre de voir si les symptômes passent ?",
+          "a": "Non. N’attendez jamais. Des symptômes possibles d’AVC sont une urgence médicale, même s’ils s’améliorent ou disparaissent. Appelez immédiatement les secours."
+        },
+        "de": {
+          "q": "Kann ich abwarten, ob die Symptome vergehen?",
+          "a": "Nein. Warten Sie nie. Mögliche Schlaganfall-Symptome sind ein medizinischer Notfall, auch wenn sie sich bessern oder verschwinden. Rufen Sie sofort den Notruf."
+        }
+      }
+    }
+  ],
+  "emergencyText": {
+    "en": "What you describe may be a stroke. Call emergency services now. Do not wait for an answer here. Possible stroke symptoms are a medical emergency. Call emergency services immediately. Do not wait for symptoms to disappear.",
+    "fr": "Ce que vous décrivez peut être un AVC. Appelez les secours maintenant. N’attendez pas de réponse ici. Des symptômes possibles d’AVC sont une urgence médicale. Appelez immédiatement les secours. N’attendez pas que les symptômes disparaissent.",
+    "de": "Was Sie beschreiben, könnte ein Schlaganfall sein. Rufen Sie jetzt den Notruf. Warten Sie nicht auf eine Antwort hier. Mögliche Schlaganfall-Symptome sind ein medizinischer Notfall. Rufen Sie sofort den Notruf. Warten Sie nicht, bis die Symptome verschwinden."
+  },
+  "medicationRefusal": {
+    "en": "I can't give advice on taking, starting, stopping or changing medication. Please ask your doctor or pharmacist. If you suspect a stroke, call emergency services — do not take any medication.",
+    "fr": "Je ne peux pas donner de conseil sur la prise, le début, l’arrêt ou la modification d’un médicament. Demandez à votre médecin ou pharmacien. En cas de suspicion d’AVC, appelez les secours — ne prenez aucun médicament.",
+    "de": "Ich kann keine Ratschläge zur Einnahme, zum Beginn, Absetzen oder Ändern von Medikamenten geben. Bitte fragen Sie Ihre Ärztin/Ihren Arzt oder Ihre Apotheke. Bei Verdacht auf Schlaganfall rufen Sie den Notruf — nehmen Sie keine Medikamente ein."
+  }
+}

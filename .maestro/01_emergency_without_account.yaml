@@ -1,0 +1,16 @@
+# Emergency must be reachable on first launch, without account or onboarding.
+appId: org.strokeguard.app
+---
+- clearState
+- launchApp
+- assertVisible:
+    id: "onboarding-emergency"
+- tapOn:
+    id: "onboarding-emergency"
+- assertVisible:
+    id: "main-warning"
+- assertVisible:
+    id: "emergency-call-button"
+- tapOn:
+    id: "onset-time-now"
+- assertNotVisible: "Not recorded"

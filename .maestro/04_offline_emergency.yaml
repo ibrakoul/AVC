@@ -1,0 +1,9 @@
+# Run with the device in airplane mode: emergency content is bundled.
+appId: org.strokeguard.app
+---
+- launchApp
+- setAirplaneMode: enabled
+- tapOn: { id: "header-emergency-button" }
+- assertVisible: { id: "emergency-call-button" }
+- assertVisible: { id: "dataset-info" }
+- setAirplaneMode: disabled

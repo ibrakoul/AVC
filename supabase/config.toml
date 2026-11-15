@@ -1,0 +1,31 @@
+# Minimal Supabase CLI configuration. Run `supabase init` to regenerate a full
+# file if needed; keep project secrets out of this file.
+project_id = "stroke-guard-ai"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public"]
+
+[db]
+port = 54322
+major_version = 15
+
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql"]
+
+[auth]
+enabled = true
+site_url = "strokeguard://"
+enable_signup = true
+minimum_password_length = 8
+
+[auth.email]
+enable_confirmations = true
+
+[functions.assistant]
+verify_jwt = false
+
+[functions.delete-account]
+verify_jwt = true

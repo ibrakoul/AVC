@@ -1,0 +1,11 @@
+appId: org.strokeguard.app
+---
+- launchApp
+- tapOn: "Health"
+- tapOn: { id: "add-measurement" }
+- tapOn: { id: "input-value" }
+- inputText: "128"
+- tapOn: { id: "input-value2" }
+- inputText: "82"
+- tapOn: { id: "save-measurement" }
+- assertVisible: { id: "trend-blood_pressure" }

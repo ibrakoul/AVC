@@ -1,0 +1,17 @@
+# Reporting a sudden sign must open emergency instructions immediately.
+appId: org.strokeguard.app
+---
+- clearState
+- launchApp
+- tapOn: { id: "onboarding-next" }
+- tapOn: { id: "onboarding-next" }
+- tapOn: { id: "onboarding-next" }
+- tapOn: { id: "onboarding-next" }
+- tapOn: { id: "onboarding-accept" }
+- tapOn: { id: "shortcut-recognize" }
+- tapOn: { id: "protocol-FAST" }
+- scrollUntilVisible:
+    element: { id: "observe-F" }
+- tapOn: { id: "observe-F" }
+- assertVisible: { id: "emergency-trigger-banner" }
+- assertVisible: { id: "emergency-call-button" }
